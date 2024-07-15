@@ -1,5 +1,5 @@
 # ArtExchange2023
-Made as a gift for MontagueETC for the SCP Wiki Art Exchange
+Made as a gift for MontagueETC for the SCP Wiki 2023 Art Exchange. Based on their article, https://scp-wiki.wikidot.com/scp-6462.
 
 
 ## Screenshots
