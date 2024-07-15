@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cybj53etkd0i1"
+path="res://.godot/imported/Book_A_02.obj-22e86da128b358b3b2b3223469a46032.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Book_A_02.obj-22e86da128b358b3b2b3223469a46032.mesh"]
+
+source_file="res://Assets/PSX Bookshelves & Books Pack/OBJ/Book_A_02.obj"
+dest_files=["res://.godot/imported/Book_A_02.obj-22e86da128b358b3b2b3223469a46032.mesh", "res://.godot/imported/Book_A_02.obj-22e86da128b358b3b2b3223469a46032.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

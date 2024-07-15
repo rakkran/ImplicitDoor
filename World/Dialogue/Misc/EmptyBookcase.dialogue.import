@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://cqr7vxlfwm4cf"
+path="res://.godot/imported/EmptyBookcase.dialogue-4c335181f9ee00667409b078ce8dc8d7.tres"
+
+[deps]
+
+source_file="res://World/Dialogue/Misc/EmptyBookcase.dialogue"
+dest_files=["res://.godot/imported/EmptyBookcase.dialogue-4c335181f9ee00667409b078ce8dc8d7.tres"]
+
+[params]
+
+defaults=true

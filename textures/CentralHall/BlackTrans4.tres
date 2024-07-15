@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bnkw2mi45tn81"]
+
+[ext_resource type="Texture2D" uid="uid://dbut438b12tls" path="res://textures/CentralHall/BlackTrans4.jpg" id="1_28xd2"]
+
+[resource]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0.352941)
+albedo_texture = ExtResource("1_28xd2")

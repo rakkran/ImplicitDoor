@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://bow62wrhwl12n"
+path="res://.godot/imported/CentralHall.8.map-7b1401a67237f565f0008211849f4786.tres"
+
+[deps]
+
+source_file="res://Models/CentralHall/autosave/CentralHall.8.map"
+dest_files=["res://.godot/imported/CentralHall.8.map-7b1401a67237f565f0008211849f4786.tres"]
+
+[params]
+

@@ -1,0 +1,2 @@
+FONTS
+- Loren Schmidt, Gelatine Mono (https://lorenschmidt.itch.io/gelatin-mono) CC-BY-SA 4.0

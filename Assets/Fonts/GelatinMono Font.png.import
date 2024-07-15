@@ -1,0 +1,22 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://brabbutq16yu6"
+path="res://.godot/imported/GelatinMono Font.png-1dfa92a0caff3826dc501b502d9590eb.fontdata"
+
+[deps]
+
+source_file="res://Assets/Fonts/GelatinMono Font.png"
+dest_files=["res://.godot/imported/GelatinMono Font.png-1dfa92a0caff3826dc501b502d9590eb.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray()
+columns=16
+rows=6
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+fallbacks=[]
+compress=true
+scaling_mode=2

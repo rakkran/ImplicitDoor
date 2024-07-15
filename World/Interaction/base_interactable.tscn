@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d7vattcb72u0"]
+
+[ext_resource type="PackedScene" uid="uid://djisi072x3ysq" path="res://World/Interaction/interactable.tscn" id="1_ykgsl"]
+[ext_resource type="Script" path="res://World/Interaction/base_interactable.gd" id="2_64oo6"]
+
+[node name="BaseInteractable" instance=ExtResource("1_ykgsl")]
+script = ExtResource("2_64oo6")
+prompt_text = "Press E to inspect."
+interact_text = Array[String](["Default inspect text goes here! I really have nothing more to add. Thanks for testing.", "You're still here? Awesome."])
+
+[connection signal="focused" from="." to="." method="_on_focused"]
+[connection signal="interacted" from="." to="." method="_on_interacted"]
+[connection signal="unfocused" from="." to="." method="_on_unfocused"]

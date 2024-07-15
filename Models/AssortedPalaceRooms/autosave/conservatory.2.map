@@ -1,0 +1,504 @@
+// Game: The Imperceptible Door
+// Format: Standard
+// entity 0
+{
+"classname" "worldspawn"
+// brush 0
+{
+( -752 704 16 ) ( -752 -192 16 ) ( -752 -192 -16 ) __TB_empty 0 0 0 1 1
+( -752 -192 16 ) ( 224 -192 16 ) ( 224 -192 -16 ) __TB_empty 0 0 0 1 1
+( 224 -192 -16 ) ( 224 704 -16 ) ( -752 704 -16 ) __TB_empty 0 0 0 1 1
+( -752 704 16 ) ( 224 704 16 ) ( 224 -192 16 ) __TB_empty 0 0 0 1 1
+( 224 704 -16 ) ( 224 704 16 ) ( -752 704 16 ) __TB_empty 0 0 0 1 1
+( 224 -192 16 ) ( 224 704 16 ) ( 224 704 -16 ) __TB_empty 0 0 0 1 1
+}
+// brush 1
+{
+( 162 168 32 ) ( 160 176 32 ) ( 160 176 176 ) CentralHall/ExitTransparent -0.69734955 0 0 1.3660254 1
+( 162 184 32 ) ( 162 184 176 ) ( 160 176 176 ) CentralHall/ExitTransparent -0.9845276 0 0 1.3660254 1
+( 162 168 176 ) ( 168 162 176 ) ( 168 162 32 ) CentralHall/ExitTransparent 0.19339752 0 180 1.2247449 -1
+( 168 190 32 ) ( 168 190 176 ) ( 162 184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 168 162 176 ) ( 176 160 176 ) ( 176 160 32 ) CentralHall/ExitTransparent -0.30265808 0 180 1.3660254 -1
+( 176 192 32 ) ( 176 192 176 ) ( 168 190 176 ) CentralHall/ExitTransparent -0.5492096 0 180 1.4142137 -1
+( 190 168 32 ) ( 192 176 32 ) ( 190 184 32 ) CentralHall/ExitTransparent -0.5550995 0.45078278 15.000003 1 1
+( 190 184 176 ) ( 192 176 176 ) ( 190 168 176 ) CentralHall/ExitTransparent -0.9015808 0 45 1 1
+( 176 160 176 ) ( 184 162 176 ) ( 184 162 32 ) CentralHall/ExitTransparent -0.5492172 0 180 1.4142137 -1
+( 184 190 32 ) ( 184 190 176 ) ( 176 192 176 ) CentralHall/ExitTransparent -0.015472412 0 180 1.3660254 -1
+( 184 162 176 ) ( 190 168 176 ) ( 190 168 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 184 32 ) ( 190 184 176 ) ( 184 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 168 176 ) ( 192 176 176 ) ( 192 176 32 ) CentralHall/ExitTransparent -0.4507904 0 0 1.4142137 1
+( 192 176 32 ) ( 192 176 176 ) ( 190 184 176 ) CentralHall/ExitTransparent -0.45078278 0 0 1.4142137 1
+}
+// brush 2
+{
+( 162 328 32 ) ( 160 336 32 ) ( 160 336 176 ) CentralHall/ExitTransparent 0.17453003 0 0 1.3660254 1
+( 160 336 176 ) ( 160 336 32 ) ( 162 344 32 ) CentralHall/ExitTransparent 0.88734436 0 0 1.3660254 1
+( 162 328 176 ) ( 168 322 176 ) ( 168 322 32 ) CentralHall/ExitTransparent -0.16714478 0 180 1.2247449 -1
+( 168 350 32 ) ( 168 350 176 ) ( 162 344 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 168 322 176 ) ( 176 320 176 ) ( 176 320 32 ) CentralHall/ExitTransparent -0.30265808 0 180 1.3660254 -1
+( 176 352 32 ) ( 176 352 176 ) ( 168 350 176 ) CentralHall/ExitTransparent -0.5492096 0 180 1.4142137 -1
+( 190 328 32 ) ( 192 336 32 ) ( 190 344 32 ) CentralHall/ExitTransparent 0.033843994 -0.0010986328 15.000003 1 1
+( 190 344 176 ) ( 192 336 176 ) ( 190 328 176 ) CentralHall/ExitTransparent 0.9613342 -0.86291504 45 1 1
+( 176 320 176 ) ( 184 322 176 ) ( 184 322 32 ) CentralHall/ExitTransparent -0.5492172 0 180 1.4142137 -1
+( 176 352 176 ) ( 176 352 32 ) ( 184 350 32 ) CentralHall/ExitTransparent -0.015472412 0 180 1.3660254 -1
+( 184 322 176 ) ( 190 328 176 ) ( 190 328 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 344 32 ) ( 190 344 176 ) ( 184 350 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 328 176 ) ( 192 336 176 ) ( 192 336 32 ) CentralHall/ExitTransparent 0.4121399 0 0 1.4142137 1
+( 192 336 32 ) ( 192 336 176 ) ( 190 344 176 ) CentralHall/ExitTransparent 0.4121399 0 0 1.4142137 1
+}
+// brush 3
+{
+( -734 328 32 ) ( -736 336 32 ) ( -736 336 176 ) CentralHall/ExitTransparent 0.17453003 0 0 1.3660254 1
+( -736 336 176 ) ( -736 336 32 ) ( -734 344 32 ) CentralHall/ExitTransparent 0.88734436 0 0 1.3660254 1
+( -734 328 176 ) ( -728 322 176 ) ( -728 322 32 ) CentralHall/ExitTransparent -0.16714478 0 180 1.2247449 -1
+( -728 350 32 ) ( -728 350 176 ) ( -734 344 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -728 322 176 ) ( -720 320 176 ) ( -720 320 32 ) CentralHall/ExitTransparent -0.22015381 0 180 1.3660254 -1
+( -720 352 32 ) ( -720 352 176 ) ( -728 350 176 ) CentralHall/ExitTransparent -0.11685181 0 180 1.4142137 -1
+( -706 328 32 ) ( -704 336 32 ) ( -706 344 32 ) CentralHall/ExitTransparent 0.50335693 0.9008179 15.000003 1 1
+( -706 344 176 ) ( -704 336 176 ) ( -706 328 176 ) CentralHall/ExitTransparent 0.5289917 0.70477295 45 1 1
+( -720 320 176 ) ( -712 322 176 ) ( -712 322 32 ) CentralHall/ExitTransparent -0.11685181 0 180 1.4142137 -1
+( -720 352 176 ) ( -720 352 32 ) ( -712 350 32 ) CentralHall/ExitTransparent -0.9329834 0 180 1.3660254 -1
+( -712 322 176 ) ( -706 328 176 ) ( -706 328 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 344 32 ) ( -706 344 176 ) ( -712 350 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 328 176 ) ( -704 336 176 ) ( -704 336 32 ) CentralHall/ExitTransparent 0.4121399 0 0 1.4142137 1
+( -704 336 32 ) ( -704 336 176 ) ( -706 344 176 ) CentralHall/ExitTransparent 0.4121399 0 0 1.4142137 1
+}
+// brush 4
+{
+( -734 168 32 ) ( -736 176 32 ) ( -736 176 176 ) CentralHall/ExitTransparent -0.69734955 0 0 1.3660254 1
+( -734 184 32 ) ( -734 184 176 ) ( -736 176 176 ) CentralHall/ExitTransparent -0.9845276 0 0 1.3660254 1
+( -734 168 176 ) ( -728 162 176 ) ( -728 162 32 ) CentralHall/ExitTransparent 0.1933899 0 180 1.2247449 -1
+( -728 190 32 ) ( -728 190 176 ) ( -734 184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -728 162 176 ) ( -720 160 176 ) ( -720 160 32 ) CentralHall/ExitTransparent -0.22015381 0 180 1.3660254 -1
+( -720 192 32 ) ( -720 192 176 ) ( -728 190 176 ) CentralHall/ExitTransparent -0.11685181 0 180 1.4142137 -1
+( -706 168 32 ) ( -704 176 32 ) ( -706 184 32 ) CentralHall/ExitTransparent 0.9144287 0.35269165 15.000003 1 1
+( -706 184 176 ) ( -704 176 176 ) ( -706 168 176 ) CentralHall/ExitTransparent 0.66607666 0.567688 45 1 1
+( -720 160 176 ) ( -712 162 176 ) ( -712 162 32 ) CentralHall/ExitTransparent -0.11685181 0 180 1.4142137 -1
+( -712 190 32 ) ( -712 190 176 ) ( -720 192 176 ) CentralHall/ExitTransparent -0.9329834 0 180 1.3660254 -1
+( -712 162 176 ) ( -706 168 176 ) ( -706 168 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 184 32 ) ( -706 184 176 ) ( -712 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 168 176 ) ( -704 176 176 ) ( -704 176 32 ) CentralHall/ExitTransparent -0.4507904 0 0 1.4142137 1
+( -704 176 32 ) ( -704 176 176 ) ( -706 184 176 ) CentralHall/ExitTransparent -0.45078278 0 0 1.4142137 1
+}
+// brush 5
+{
+( -352 -176 32 ) ( -352 -176 176 ) ( -350 -184 176 ) CentralHall/ExitTransparent -0.45076752 0 180 1.4142137 -1
+( -352 -176 176 ) ( -352 -176 32 ) ( -350 -168 32 ) CentralHall/ExitTransparent -0.6973572 0 180 1.3660254 -1
+( -350 -184 32 ) ( -350 -184 176 ) ( -344 -190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -162 32 ) ( -344 -162 176 ) ( -350 -168 176 ) CentralHall/ExitTransparent 0 0 180 1 -1
+( -336 -192 176 ) ( -336 -192 32 ) ( -344 -190 32 ) CentralHall/ExitTransparent 0.88734436 0 180 1.3660254 -1
+( -336 -160 32 ) ( -336 -160 176 ) ( -344 -162 176 ) CentralHall/ExitTransparent 0.4121399 0 180 1.4142137 -1
+( -328 -162 32 ) ( -336 -160 32 ) ( -344 -162 32 ) CentralHall/ExitTransparent 0.03982544 0.10321045 104.99999 1 1
+( -344 -162 176 ) ( -336 -160 176 ) ( -328 -162 176 ) CentralHall/ExitTransparent 0.86291504 0.039520264 135 1 1
+( -328 -190 32 ) ( -336 -192 32 ) ( -336 -192 176 ) CentralHall/ExitTransparent 0.17453003 0 180 1.3660254 -1
+( -328 -162 176 ) ( -336 -160 176 ) ( -336 -160 32 ) CentralHall/ExitTransparent 0.4121399 0 180 1.4142137 -1
+( -328 -190 176 ) ( -322 -184 176 ) ( -322 -184 32 ) CentralHall/ExitTransparent 0.1563263 0 0 1.2247449 1
+( -322 -168 176 ) ( -328 -162 176 ) ( -328 -162 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -322 -184 176 ) ( -320 -176 176 ) ( -320 -176 32 ) CentralHall/ExitTransparent -0.9845123 0 180 1.3660254 -1
+( -320 -176 176 ) ( -322 -168 176 ) ( -322 -168 32 ) CentralHall/ExitTransparent -0.4507904 0 180 1.4142137 -1
+}
+// brush 6
+{
+( -192 -176 32 ) ( -192 -176 176 ) ( -190 -184 176 ) CentralHall/ExitTransparent -0.45076752 0 180 1.4142137 -1
+( -190 -168 32 ) ( -190 -168 176 ) ( -192 -176 176 ) CentralHall/ExitTransparent -0.6973572 0 180 1.3660254 -1
+( -190 -184 32 ) ( -190 -184 176 ) ( -184 -190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -184 -162 32 ) ( -184 -162 176 ) ( -190 -168 176 ) CentralHall/ExitTransparent 0 0 180 1 -1
+( -184 -190 32 ) ( -184 -190 176 ) ( -176 -192 176 ) CentralHall/ExitTransparent 0.015472412 0 180 1.3660254 -1
+( -176 -160 32 ) ( -176 -160 176 ) ( -184 -162 176 ) CentralHall/ExitTransparent 0.5492172 0 180 1.4142137 -1
+( -168 -162 32 ) ( -176 -160 32 ) ( -184 -162 32 ) CentralHall/ExitTransparent 0.45082092 0.5550842 104.99999 1 1
+( -184 -162 176 ) ( -176 -160 176 ) ( -168 -162 176 ) CentralHall/ExitTransparent 0 0.9024353 135 1 1
+( -168 -190 32 ) ( -176 -192 32 ) ( -176 -192 176 ) CentralHall/ExitTransparent 0.30265808 0 180 1.3660254 -1
+( -168 -162 176 ) ( -176 -160 176 ) ( -176 -160 32 ) CentralHall/ExitTransparent 0.5492096 0 180 1.4142137 -1
+( -168 -190 176 ) ( -162 -184 176 ) ( -162 -184 32 ) CentralHall/ExitTransparent 0.1563263 0 0 1.2247449 1
+( -162 -168 176 ) ( -168 -162 176 ) ( -168 -162 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -162 -184 176 ) ( -160 -176 176 ) ( -160 -176 32 ) CentralHall/ExitTransparent -0.9845123 0 180 1.3660254 -1
+( -160 -176 176 ) ( -162 -168 176 ) ( -162 -168 32 ) CentralHall/ExitTransparent -0.4507904 0 180 1.4142137 -1
+}
+// brush 7
+{
+( -352 704 32 ) ( -352 704 176 ) ( -350 696 176 ) CentralHall/ExitTransparent 0.8031311 0 180 1.4142137 -1
+( -352 704 176 ) ( -352 704 32 ) ( -350 712 32 ) CentralHall/ExitTransparent 0.5073242 0 180 1.3660254 -1
+( -350 696 32 ) ( -350 696 176 ) ( -344 690 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 718 32 ) ( -344 718 176 ) ( -350 712 176 ) CentralHall/ExitTransparent 0 0 180 1 -1
+( -336 688 176 ) ( -336 688 32 ) ( -344 690 32 ) CentralHall/ExitTransparent 0.88734436 0 180 1.3660254 -1
+( -336 720 32 ) ( -336 720 176 ) ( -344 718 176 ) CentralHall/ExitTransparent 0.4121399 0 180 1.4142137 -1
+( -328 718 32 ) ( -336 720 32 ) ( -344 718 32 ) CentralHall/ExitTransparent -0.9749756 -0.6574249 104.99999 1 1
+( -344 718 176 ) ( -336 720 176 ) ( -328 718 176 ) CentralHall/ExitTransparent -0.39105225 -0.21444702 135 1 1
+( -328 690 32 ) ( -336 688 32 ) ( -336 688 176 ) CentralHall/ExitTransparent 0.17453003 0 180 1.3660254 -1
+( -328 718 176 ) ( -336 720 176 ) ( -336 720 32 ) CentralHall/ExitTransparent 0.4121399 0 180 1.4142137 -1
+( -328 690 176 ) ( -322 696 176 ) ( -322 696 32 ) CentralHall/ExitTransparent -0.36065674 0 0 1.2247449 1
+( -322 712 176 ) ( -328 718 176 ) ( -328 718 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -322 696 176 ) ( -320 704 176 ) ( -320 704 32 ) CentralHall/ExitTransparent 0.22015381 0 180 1.3660254 -1
+( -320 704 176 ) ( -322 712 176 ) ( -322 712 32 ) CentralHall/ExitTransparent 0.8031311 0 180 1.4142137 -1
+}
+// brush 8
+{
+( -192 704 32 ) ( -192 704 176 ) ( -190 696 176 ) CentralHall/ExitTransparent 0.8031311 0 180 1.4142137 -1
+( -190 712 32 ) ( -190 712 176 ) ( -192 704 176 ) CentralHall/ExitTransparent 0.5073242 0 180 1.3660254 -1
+( -190 696 32 ) ( -190 696 176 ) ( -184 690 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -184 718 32 ) ( -184 718 176 ) ( -190 712 176 ) CentralHall/ExitTransparent 0 0 180 1 -1
+( -184 690 32 ) ( -184 690 176 ) ( -176 688 176 ) CentralHall/ExitTransparent 0.015472412 0 180 1.3660254 -1
+( -176 720 32 ) ( -176 720 176 ) ( -184 718 176 ) CentralHall/ExitTransparent 0.5492172 0 180 1.4142137 -1
+( -168 718 32 ) ( -176 720 32 ) ( -184 718 32 ) CentralHall/ExitTransparent -0.56396484 -0.20556545 104.99999 1 1
+( -184 718 176 ) ( -176 720 176 ) ( -168 718 176 ) CentralHall/ExitTransparent -0.2539673 -0.35153198 135 1 1
+( -168 690 32 ) ( -176 688 32 ) ( -176 688 176 ) CentralHall/ExitTransparent 0.30265808 0 180 1.3660254 -1
+( -168 718 176 ) ( -176 720 176 ) ( -176 720 32 ) CentralHall/ExitTransparent 0.5492096 0 180 1.4142137 -1
+( -168 690 176 ) ( -162 696 176 ) ( -162 696 32 ) CentralHall/ExitTransparent -0.36065674 0 0 1.2247449 1
+( -162 712 176 ) ( -168 718 176 ) ( -168 718 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -162 696 176 ) ( -160 704 176 ) ( -160 704 32 ) CentralHall/ExitTransparent 0.22015381 0 180 1.3660254 -1
+( -160 704 176 ) ( -162 712 176 ) ( -162 712 32 ) CentralHall/ExitTransparent 0.8031311 0 180 1.4142137 -1
+}
+// brush 9
+{
+( 160 176 176 ) ( 162 168 192 ) ( 162 168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 162 184 192 ) ( 160 176 176 ) ( 162 184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 168 162 192 ) ( 162 168 176 ) ( 162 168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 168 190 192 ) ( 162 184 176 ) ( 168 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 160 192 ) ( 168 162 176 ) ( 168 162 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 192 192 ) ( 168 190 176 ) ( 176 192 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 176 176 ) ( 184 162 176 ) ( 190 168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 176 192 ) ( 184 190 192 ) ( 190 184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 162 192 ) ( 176 160 176 ) ( 176 160 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 190 192 ) ( 176 192 176 ) ( 184 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 168 192 ) ( 184 162 176 ) ( 184 162 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 184 192 ) ( 184 190 176 ) ( 190 184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 176 192 ) ( 190 168 176 ) ( 190 168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 176 192 ) ( 190 184 176 ) ( 192 176 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 10
+{
+( 160 336 176 ) ( 162 328 192 ) ( 162 328 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 160 336 176 ) ( 162 344 192 ) ( 160 336 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 168 322 192 ) ( 162 328 176 ) ( 162 328 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 168 350 192 ) ( 162 344 176 ) ( 168 350 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 320 192 ) ( 168 322 176 ) ( 168 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 352 192 ) ( 168 350 176 ) ( 176 352 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 336 176 ) ( 184 322 176 ) ( 190 328 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 336 192 ) ( 184 350 192 ) ( 190 344 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 322 192 ) ( 176 320 176 ) ( 176 320 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 352 176 ) ( 184 350 192 ) ( 176 352 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 328 192 ) ( 184 322 176 ) ( 184 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 190 344 192 ) ( 184 350 176 ) ( 190 344 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 336 192 ) ( 190 328 176 ) ( 190 328 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 336 192 ) ( 190 344 176 ) ( 192 336 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 11
+{
+( 168 190 192 ) ( 168 322 176 ) ( 168 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 190 192 ) ( 168 190 176 ) ( 168 190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 322 176 ) ( 168 190 176 ) ( 184 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 322 192 ) ( 168 190 192 ) ( 168 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 322 192 ) ( 168 322 176 ) ( 184 322 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 184 322 192 ) ( 184 190 176 ) ( 184 190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 12
+{
+( 192 176 32 ) ( 176 192 32 ) ( 176 192 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 192 176 176 ) ( 432 176 176 ) ( 432 176 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 176 32 ) ( 432 192 32 ) ( 176 192 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 192 176 ) ( 432 192 176 ) ( 432 176 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 192 32 ) ( 432 192 176 ) ( 176 192 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 176 176 ) ( 432 192 176 ) ( 432 192 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 13
+{
+( -764 194 32 ) ( -759 163 32 ) ( -759 163 16 ) CentralHall/ExitTransparent -0.40563965 0 180 1.3654423 -1
+( -759 163 32 ) ( -752 133 32 ) ( -752 133 16 ) CentralHall/ExitTransparent 0.1638794 0 0 1.2996399 1
+( -752 133 32 ) ( -744 103 32 ) ( -744 103 16 ) CentralHall/ExitTransparent 0.21899414 0 0 1.2702845 1
+( -744 103 32 ) ( -733 73 32 ) ( -733 73 16 ) CentralHall/ExitTransparent 0.12976074 0 0 1.2359159 1
+( -733 73 32 ) ( -721 45 32 ) ( -721 45 16 ) CentralHall/ExitTransparent -0.0503006 0 180 1.3022211 -1
+( -721 45 32 ) ( -707 17 32 ) ( -707 17 16 ) CentralHall/ExitTransparent 0.90317535 0 0 1.1527008 1
+( -707 17 32 ) ( -691 -10 32 ) ( -691 -10 16 ) CentralHall/ExitTransparent -0.045051575 0 180 1.2394724 -1
+( -691 -10 32 ) ( -673 -36 32 ) ( -673 -36 16 ) CentralHall/ExitTransparent 0.36214447 0 0 1.051307 1
+( -673 -36 32 ) ( -654 -60 32 ) ( -654 -60 16 ) CentralHall/ExitTransparent 0.20460892 0 0 0.9942821 1
+( -654 -60 32 ) ( -634 -84 32 ) ( -634 -84 16 ) CentralHall/ExitTransparent -0.8667488 0 180 1.1090924 -1
+( -634 -84 32 ) ( -612 -106 32 ) ( -612 -106 16 ) CentralHall/ExitTransparent 0.07299805 0 180 1.0566312 -1
+( -612 -106 32 ) ( -588 -126 32 ) ( -588 -126 16 ) CentralHall/ExitTransparent 0.06829834 0 180 1.1090924 -1
+( -588 -126 32 ) ( -564 -145 32 ) ( -564 -145 16 ) CentralHall/ExitTransparent 0.9078064 0 180 1.1571765 -1
+( -564 -145 32 ) ( -538 -163 32 ) ( -538 -163 16 ) CentralHall/ExitTransparent 0.3479004 0 180 1.2006937 -1
+( -538 -163 32 ) ( -511 -179 32 ) ( -511 -179 16 ) CentralHall/ExitTransparent 0.96725464 0 180 1.2394724 -1
+( -511 -179 32 ) ( -483 -193 32 ) ( -483 -193 16 ) CentralHall/ExitTransparent 0.22451782 0 180 1.2733594 -1
+( -483 -193 32 ) ( -455 -205 32 ) ( -455 -205 16 ) CentralHall/ExitTransparent 0.48858643 0 180 1.3022211 -1
+( -455 -205 32 ) ( -425 -216 32 ) ( -425 -216 16 ) CentralHall/ExitTransparent -0.65670776 0 0 1.2359159 1
+( -425 -216 32 ) ( -395 -224 32 ) ( -395 -224 16 ) CentralHall/ExitTransparent -0.12609863 0 0 1.2702845 1
+( -395 -224 32 ) ( -365 -231 32 ) ( -365 -231 16 ) CentralHall/ExitTransparent 0.07762146 0 180 1.3576165 -1
+( -365 -231 32 ) ( -334 -236 32 ) ( -334 -236 16 ) CentralHall/ExitTransparent -0.29415894 0 0 1.3238662 1
+( -334 -236 32 ) ( -303 -239 32 ) ( -303 -239 16 ) CentralHall/ExitTransparent 0.82429504 0 180 1.3678793 -1
+( -303 -239 32 ) ( -272 -240 32 ) ( -272 -240 16 ) CentralHall/ExitTransparent -0.5543976 0 0 1.3565698 1
+( 223 225 16 ) ( 224 256 16 ) ( 223 287 16 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 223 287 32 ) ( 224 256 32 ) ( 223 225 32 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 176 192 32 ) ( 192 192 32 ) ( 192 192 160 ) CentralHall/ExitTransparent 0.44560242 0 0 1.3565698 1
+( -272 -240 32 ) ( -241 -239 32 ) ( -241 -239 16 ) CentralHall/ExitTransparent 0.43415833 0 180 1.3565698 -1
+( -241 -239 32 ) ( -210 -236 32 ) ( -210 -236 16 ) CentralHall/ExitTransparent -0.4797821 0 0 1.3678793 1
+( -210 -236 32 ) ( -179 -231 32 ) ( -179 -231 16 ) CentralHall/ExitTransparent -0.68782043 0 0 1.3654423 1
+( -179 -231 32 ) ( -149 -224 32 ) ( -149 -224 16 ) CentralHall/ExitTransparent -0.22012329 0 0 1.3576165 1
+( -149 -224 32 ) ( -119 -216 32 ) ( -119 -216 16 ) CentralHall/ExitTransparent -0.18109131 0 0 1.344433 1
+( -119 -216 32 ) ( -89 -205 32 ) ( -89 -205 16 ) CentralHall/ExitTransparent 0.18389893 0 180 1.2359159 -1
+( -89 -205 32 ) ( -61 -193 32 ) ( -61 -193 16 ) CentralHall/ExitTransparent 0.6200485 0 180 1.1966697 -1
+( -61 -193 32 ) ( -33 -179 32 ) ( -33 -179 16 ) CentralHall/ExitTransparent -0.55911255 0 0 1.2733594 1
+( -33 -179 32 ) ( -6 -163 32 ) ( -6 -163 16 ) CentralHall/ExitTransparent 0.49208832 0 180 1.1041827 -1
+( -6 -163 32 ) ( 20 -145 32 ) ( 20 -145 16 ) CentralHall/ExitTransparent 0.14299011 0 180 1.051307 -1
+( 20 -145 32 ) ( 44 -126 32 ) ( 44 -126 16 ) CentralHall/ExitTransparent -0.98241806 0 0 1.1571765 1
+( 44 -126 32 ) ( 68 -106 32 ) ( 68 -106 16 ) CentralHall/ExitTransparent -0.4405403 0 0 1.1090924 1
+( 68 -106 32 ) ( 90 -84 32 ) ( 90 -84 16 ) CentralHall/ExitTransparent -0.068208694 0 0 1.0566312 1
+( 90 -84 32 ) ( 110 -60 32 ) ( 110 -60 16 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 110 -60 32 ) ( 129 -36 32 ) ( 129 -36 16 ) CentralHall/ExitTransparent -0.7953949 0 0 0.9942821 1
+( 129 -36 32 ) ( 147 -10 32 ) ( 147 -10 16 ) CentralHall/ExitTransparent 0.09367752 0 180 1.2006937 -1
+( 147 -10 32 ) ( 163 17 32 ) ( 163 17 16 ) CentralHall/ExitTransparent -0.017559052 0 0 1.1041827 1
+( 163 17 32 ) ( 177 45 32 ) ( 177 45 16 ) CentralHall/ExitTransparent -0.096824646 0 0 1.1527008 1
+( 176 304 32 ) ( 176 288 32 ) ( 176 288 160 ) CentralHall/ExitTransparent -0.7713928 0 0 1.3565698 1
+}
+// brush 14
+{
+( 176 304 32 ) ( 176 288 160 ) ( 176 288 32 ) CentralHall/ExitTransparent 0.22860718 0 0 1.3565698 1
+( 223 225 16 ) ( 224 256 16 ) ( 223 287 16 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 223 287 32 ) ( 224 256 32 ) ( 223 225 32 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 176 192 32 ) ( 192 192 32 ) ( 192 192 160 ) CentralHall/ExitTransparent -0.21029663 0 0 1.2733594 1
+( 163 17 32 ) ( 177 45 32 ) ( 177 45 16 ) CentralHall/ExitTransparent -0.096824646 0 0 1.1527008 1
+( 177 45 32 ) ( 189 73 32 ) ( 189 73 16 ) CentralHall/ExitTransparent -0.009513855 0 0 1.1966697 1
+( 189 73 32 ) ( 200 103 32 ) ( 200 103 16 ) CentralHall/ExitTransparent -0.87023926 0 0 1.2359159 1
+( 200 103 32 ) ( 208 133 32 ) ( 208 133 16 ) CentralHall/ExitTransparent -0.78100586 0 0 1.2702845 1
+( 208 133 32 ) ( 215 163 32 ) ( 215 163 16 ) CentralHall/ExitTransparent 0.99450684 0 180 1.3576165 -1
+( 215 163 32 ) ( 220 194 32 ) ( 220 194 16 ) CentralHall/ExitTransparent -0.12599182 0 0 1.3238662 1
+}
+// brush 15
+{
+( -767 225 16 ) ( -768 256 16 ) ( -768 256 32 ) CentralHall/ExitTransparent 0.22860718 0 0 1.3565698 1
+( -767 287 16 ) ( -767 287 32 ) ( -768 256 32 ) CentralHall/ExitTransparent 0.6840973 0 0 1.3649179 1
+( -767 225 32 ) ( -764 194 32 ) ( -764 194 16 ) CentralHall/ExitTransparent -0.1767273 0 180 1.3678793 -1
+( -764 318 16 ) ( -764 318 32 ) ( -767 287 32 ) CentralHall/ExitTransparent 0.52124023 0 0 1.3678793 1
+( -764 194 32 ) ( -759 163 32 ) ( -759 163 16 ) CentralHall/ExitTransparent -0.40563965 0 180 1.3654423 -1
+( -764 318 32 ) ( -764 318 16 ) ( -759 349 16 ) CentralHall/ExitTransparent 0.62428284 0 0 1.3654423 1
+( 176 192 32 ) ( 192 192 160 ) ( 192 192 32 ) CentralHall/ExitTransparent -0.5543976 0 0 1.3565698 1
+( 223 225 16 ) ( 224 256 16 ) ( 223 287 16 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 223 287 32 ) ( 224 256 32 ) ( 223 225 32 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 176 320 32 ) ( 192 320 32 ) ( 192 320 160 ) CentralHall/ExitTransparent 0.44560242 0 0 1.3565698 1
+( 176 304 32 ) ( 176 288 32 ) ( 176 288 160 ) CentralHall/ExitTransparent -0.7713928 0 0 1.3565698 1
+}
+// brush 16
+{
+( -764 318 32 ) ( -764 318 16 ) ( -759 349 16 ) CentralHall/ExitTransparent 0.62428284 0 0 1.3654423 1
+( -752 379 16 ) ( -752 379 32 ) ( -759 349 32 ) CentralHall/ExitTransparent 0.8629761 0 0 1.3576165 1
+( -752 379 32 ) ( -752 379 16 ) ( -744 409 16 ) CentralHall/ExitTransparent 0.08828735 0 0 1.344433 1
+( -733 439 16 ) ( -733 439 32 ) ( -744 409 32 ) CentralHall/ExitTransparent -0.6025696 0 180 1.2359159 -1
+( -721 467 16 ) ( -721 467 32 ) ( -733 439 32 ) CentralHall/ExitTransparent -0.15545654 0 180 1.1966697 -1
+( -721 467 32 ) ( -721 467 16 ) ( -707 495 16 ) CentralHall/ExitTransparent 0.78970337 0 0 1.2733594 1
+( -691 522 16 ) ( -691 522 32 ) ( -707 495 32 ) CentralHall/ExitTransparent 0.87597656 0 0 1.2394724 1
+( -673 548 16 ) ( -673 548 32 ) ( -691 522 32 ) CentralHall/ExitTransparent -0.625 0 180 1.051307 -1
+( -654 572 16 ) ( -654 572 32 ) ( -673 548 32 ) CentralHall/ExitTransparent 0.14898682 0 180 0.9942821 -1
+( -634 596 16 ) ( -634 596 32 ) ( -654 572 32 ) CentralHall/ExitTransparent 0 0 180 1 -1
+( -612 618 16 ) ( -612 618 32 ) ( -634 596 32 ) CentralHall/ExitTransparent 0.16491699 0 180 1.0566312 -1
+( -588 638 16 ) ( -588 638 32 ) ( -612 618 32 ) CentralHall/ExitTransparent -0.93170166 0 180 1.1090924 -1
+( -564 657 16 ) ( -564 657 32 ) ( -588 638 32 ) CentralHall/ExitTransparent -0.0921936 0 180 1.1571765 -1
+( -538 675 16 ) ( -538 675 32 ) ( -564 657 32 ) CentralHall/ExitTransparent 0.5941467 0 0 1.051307 1
+( -511 691 16 ) ( -511 691 32 ) ( -538 675 32 ) CentralHall/ExitTransparent -0.03274536 0 180 1.2394724 -1
+( -511 691 32 ) ( -511 691 16 ) ( -483 705 16 ) CentralHall/ExitTransparent -0.7754822 0 180 1.2733594 -1
+( -455 717 16 ) ( -455 717 32 ) ( -483 705 32 ) CentralHall/ExitTransparent 0.21499634 0 0 1.1966697 1
+( -425 728 16 ) ( -425 728 32 ) ( -455 717 32 ) CentralHall/ExitTransparent -0.93984985 0 180 1.3259435 -1
+( -395 736 16 ) ( -395 736 32 ) ( -425 728 32 ) CentralHall/ExitTransparent 0.87390137 0 0 1.2702845 1
+( -365 743 16 ) ( -365 743 32 ) ( -395 736 32 ) CentralHall/ExitTransparent -0.9223633 0 180 1.3576165 -1
+( -334 748 16 ) ( -334 748 32 ) ( -365 743 32 ) CentralHall/ExitTransparent 0.70584106 0 0 1.3238662 1
+( -303 751 16 ) ( -303 751 32 ) ( -334 748 32 ) CentralHall/ExitTransparent -0.1756897 0 180 1.3678793 -1
+( -272 752 16 ) ( -272 752 32 ) ( -303 751 32 ) CentralHall/ExitTransparent 0.44560242 0 0 1.3565698 1
+( 176 320 32 ) ( 192 320 160 ) ( 192 320 32 ) CentralHall/ExitTransparent -0.5543976 0 0 1.3565698 1
+( 223 225 16 ) ( 224 256 16 ) ( 223 287 16 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 223 287 32 ) ( 224 256 32 ) ( 223 225 32 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( -272 752 32 ) ( -272 752 16 ) ( -241 751 16 ) CentralHall/ExitTransparent 0.5205536 0 0 1.3649179 1
+( -210 748 16 ) ( -210 748 32 ) ( -241 751 32 ) CentralHall/ExitTransparent 0.5202179 0 0 1.3678793 1
+( -179 743 16 ) ( -179 743 32 ) ( -210 748 32 ) CentralHall/ExitTransparent 0.31217957 0 0 1.3654423 1
+( -149 736 16 ) ( -149 736 32 ) ( -179 743 32 ) CentralHall/ExitTransparent 0.7798767 0 0 1.3576165 1
+( -119 728 16 ) ( -119 728 32 ) ( -149 736 32 ) CentralHall/ExitTransparent -0.37660217 0 180 1.2702845 -1
+( -89 717 16 ) ( -89 717 32 ) ( -119 728 32 ) CentralHall/ExitTransparent 0.3340454 0 0 1.3259435 1
+( -61 705 16 ) ( -61 705 32 ) ( -89 717 32 ) CentralHall/ExitTransparent 0.23639679 0 0 1.3022211 1
+( -33 691 16 ) ( -33 691 32 ) ( -61 705 32 ) CentralHall/ExitTransparent 0.44088745 0 0 1.2733594 1
+( -6 675 16 ) ( -6 675 32 ) ( -33 691 32 ) CentralHall/ExitTransparent -0.5078964 0 180 1.1041827 -1
+( -6 675 32 ) ( -6 675 16 ) ( 20 657 16 ) CentralHall/ExitTransparent -0.8569946 0 180 1.051307 -1
+( 44 638 16 ) ( 44 638 32 ) ( 20 657 32 ) CentralHall/ExitTransparent 0.01758194 0 0 1.1571765 1
+( 68 618 16 ) ( 68 618 32 ) ( 44 638 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 68 618 32 ) ( 68 618 16 ) ( 90 596 16 ) CentralHall/ExitTransparent -0.76953125 0 0 1.0566312 1
+( 110 572 16 ) ( 110 572 32 ) ( 90 596 32 ) CentralHall/ExitTransparent -0.50549316 0 0 1.1090924 1
+( 129 548 16 ) ( 129 548 32 ) ( 110 572 32 ) CentralHall/ExitTransparent 0.14898682 0 180 0.9942821 -1
+( 147 522 16 ) ( 147 522 32 ) ( 129 548 32 ) CentralHall/ExitTransparent 0.375 0 180 1.051307 -1
+( 163 495 16 ) ( 163 495 32 ) ( 147 522 32 ) CentralHall/ExitTransparent 0.6738281 0 180 1.1041827 -1
+( 177 467 16 ) ( 177 467 32 ) ( 163 495 32 ) CentralHall/ExitTransparent -0.21029663 0 0 1.2733594 1
+( 176 304 32 ) ( 176 288 32 ) ( 176 288 160 ) CentralHall/ExitTransparent -0.7713928 0 0 1.3565698 1
+}
+// brush 17
+{
+( 176 304 32 ) ( 176 288 160 ) ( 176 288 32 ) CentralHall/ExitTransparent 0.22860718 0 0 1.3565698 1
+( 176 320 32 ) ( 192 320 160 ) ( 192 320 32 ) CentralHall/ExitTransparent -0.096824646 0 0 1.1527008 1
+( 223 225 16 ) ( 224 256 16 ) ( 223 287 16 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 223 287 32 ) ( 224 256 32 ) ( 223 225 32 ) CentralHall/ExitTransparent 0.31549072 -0.29689026 151.1999 1 1
+( 177 467 16 ) ( 177 467 32 ) ( 163 495 32 ) CentralHall/ExitTransparent -0.21029663 0 0 1.2733594 1
+( 189 439 16 ) ( 189 439 32 ) ( 177 467 32 ) CentralHall/ExitTransparent 0.84454346 0 180 1.1966697 -1
+( 200 409 16 ) ( 200 409 32 ) ( 189 439 32 ) CentralHall/ExitTransparent 0.39743042 0 180 1.2359159 -1
+( 208 379 16 ) ( 208 379 32 ) ( 200 409 32 ) CentralHall/ExitTransparent -0.91171265 0 0 1.344433 1
+( 215 349 16 ) ( 215 349 32 ) ( 208 379 32 ) CentralHall/ExitTransparent -0.13702393 0 0 1.3576165 1
+( 220 318 16 ) ( 220 318 32 ) ( 215 349 32 ) CentralHall/ExitTransparent 0.62002563 0 180 1.3238662 -1
+}
+// brush 18
+{
+( 192 336 32 ) ( 176 320 176 ) ( 176 320 32 ) CentralHall/ExitTransparent 0 0 180 1 -1
+( 432 320 32 ) ( 176 320 176 ) ( 432 320 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 336 32 ) ( 176 320 32 ) ( 432 320 32 ) CentralHall/ExitTransparent 0 0 0 1 -1
+( 176 320 176 ) ( 432 336 176 ) ( 432 320 176 ) CentralHall/ExitTransparent 0 0 0 1 -1
+( 192 336 176 ) ( 432 336 32 ) ( 432 336 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 336 176 ) ( 432 320 32 ) ( 432 320 176 ) CentralHall/ExitTransparent 0 0 180 1 -1
+}
+// brush 19
+{
+( 176 320 32 ) ( 176 192 32 ) ( 176 192 16 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 192 32 ) ( 432 192 32 ) ( 432 192 16 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 192 16 ) ( 432 320 16 ) ( 176 320 16 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 176 320 32 ) ( 432 320 32 ) ( 432 192 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 320 16 ) ( 432 320 32 ) ( 176 320 32 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 432 192 32 ) ( 432 320 32 ) ( 432 320 16 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 20
+{
+( 184 190 192 ) ( 184 322 176 ) ( 184 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 440 190 192 ) ( 184 190 176 ) ( 184 190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 440 322 176 ) ( 184 190 176 ) ( 440 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 440 322 192 ) ( 184 190 192 ) ( 184 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 440 322 192 ) ( 184 322 176 ) ( 440 322 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( 440 322 192 ) ( 440 190 176 ) ( 440 190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 21
+{
+( -352 -176 176 ) ( -350 -184 192 ) ( -350 -184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -350 -168 192 ) ( -352 -176 176 ) ( -350 -168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -190 192 ) ( -350 -184 176 ) ( -350 -184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -162 192 ) ( -350 -168 176 ) ( -344 -162 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -336 -192 192 ) ( -344 -190 176 ) ( -344 -190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -336 -160 192 ) ( -344 -162 176 ) ( -336 -160 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 -176 176 ) ( -328 -190 176 ) ( -322 -184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 -176 192 ) ( -328 -162 192 ) ( -322 -168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -328 -190 192 ) ( -336 -192 176 ) ( -336 -192 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -328 -162 192 ) ( -336 -160 176 ) ( -328 -162 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -322 -184 192 ) ( -328 -190 176 ) ( -328 -190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -322 -168 192 ) ( -328 -162 176 ) ( -322 -168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 -176 192 ) ( -322 -184 176 ) ( -322 -184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 -176 192 ) ( -322 -168 176 ) ( -320 -176 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 22
+{
+( -192 -176 176 ) ( -190 -184 192 ) ( -190 -184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 -168 192 ) ( -192 -176 176 ) ( -190 -168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -184 -190 192 ) ( -190 -184 176 ) ( -190 -184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -184 -162 192 ) ( -190 -168 176 ) ( -184 -162 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -176 -192 192 ) ( -184 -190 176 ) ( -184 -190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -176 -160 192 ) ( -184 -162 176 ) ( -176 -160 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 -176 176 ) ( -168 -190 176 ) ( -162 -184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 -176 192 ) ( -168 -162 192 ) ( -162 -168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -168 -190 192 ) ( -176 -192 176 ) ( -176 -192 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -176 -160 176 ) ( -168 -162 192 ) ( -176 -160 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -162 -184 192 ) ( -168 -190 176 ) ( -168 -190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -162 -168 192 ) ( -168 -162 176 ) ( -162 -168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 -176 192 ) ( -162 -184 176 ) ( -162 -184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 -176 192 ) ( -162 -168 176 ) ( -160 -176 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 23
+{
+( -736 176 176 ) ( -734 168 192 ) ( -734 168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -736 176 176 ) ( -734 184 192 ) ( -736 176 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -728 162 192 ) ( -734 168 176 ) ( -734 168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -728 190 192 ) ( -734 184 176 ) ( -728 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 160 192 ) ( -728 162 176 ) ( -728 162 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 192 192 ) ( -728 190 176 ) ( -720 192 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 176 176 ) ( -712 162 176 ) ( -706 168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 176 192 ) ( -712 190 192 ) ( -706 184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 162 192 ) ( -720 160 176 ) ( -720 160 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 192 176 ) ( -712 190 192 ) ( -720 192 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 168 192 ) ( -712 162 176 ) ( -712 162 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 184 192 ) ( -712 190 176 ) ( -706 184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 176 192 ) ( -706 168 176 ) ( -706 168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 176 192 ) ( -706 184 176 ) ( -704 176 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 24
+{
+( -736 336 176 ) ( -734 328 192 ) ( -734 328 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -736 336 176 ) ( -734 344 192 ) ( -736 336 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -728 322 192 ) ( -734 328 176 ) ( -734 328 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -728 350 192 ) ( -734 344 176 ) ( -728 350 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 320 192 ) ( -728 322 176 ) ( -728 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 352 192 ) ( -728 350 176 ) ( -720 352 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 336 176 ) ( -712 322 176 ) ( -706 328 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 336 192 ) ( -712 350 192 ) ( -706 344 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 322 192 ) ( -720 320 176 ) ( -720 320 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 352 176 ) ( -712 350 192 ) ( -720 352 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 328 192 ) ( -712 322 176 ) ( -712 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -706 344 192 ) ( -712 350 176 ) ( -706 344 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 336 192 ) ( -706 328 176 ) ( -706 328 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -704 336 192 ) ( -706 344 176 ) ( -704 336 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 25
+{
+( -352 704 176 ) ( -350 696 192 ) ( -350 696 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -350 712 192 ) ( -352 704 176 ) ( -350 712 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 690 192 ) ( -350 696 176 ) ( -350 696 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 718 192 ) ( -350 712 176 ) ( -344 718 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -336 688 192 ) ( -344 690 176 ) ( -344 690 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -336 720 192 ) ( -344 718 176 ) ( -336 720 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 704 176 ) ( -328 690 176 ) ( -322 696 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 704 192 ) ( -328 718 192 ) ( -322 712 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -328 690 192 ) ( -336 688 176 ) ( -336 688 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -328 718 192 ) ( -336 720 176 ) ( -328 718 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -322 696 192 ) ( -328 690 176 ) ( -328 690 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -328 718 176 ) ( -322 712 192 ) ( -328 718 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 704 192 ) ( -322 696 176 ) ( -322 696 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -320 704 192 ) ( -322 712 176 ) ( -320 704 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 26
+{
+( -192 704 176 ) ( -190 696 192 ) ( -190 696 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 712 192 ) ( -192 704 176 ) ( -190 712 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -184 690 192 ) ( -190 696 176 ) ( -190 696 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -184 718 192 ) ( -190 712 176 ) ( -184 718 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -176 688 192 ) ( -184 690 176 ) ( -184 690 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -176 720 192 ) ( -184 718 176 ) ( -176 720 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 704 176 ) ( -168 690 176 ) ( -162 696 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 704 192 ) ( -168 718 192 ) ( -162 712 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -168 690 192 ) ( -176 688 176 ) ( -176 688 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -168 718 192 ) ( -176 720 176 ) ( -168 718 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -162 696 192 ) ( -168 690 176 ) ( -168 690 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -162 712 192 ) ( -168 718 176 ) ( -162 712 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 704 192 ) ( -162 696 176 ) ( -162 696 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -160 704 192 ) ( -162 712 176 ) ( -160 704 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 27
+{
+( -322 -184 192 ) ( -322 -168 176 ) ( -322 -168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 -184 192 ) ( -322 -184 176 ) ( -322 -184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 -168 176 ) ( -322 -184 176 ) ( -190 -184 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 -168 192 ) ( -322 -184 192 ) ( -322 -168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 -168 192 ) ( -322 -168 176 ) ( -190 -168 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 -168 192 ) ( -190 -184 176 ) ( -190 -184 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 28
+{
+( -728 190 192 ) ( -728 322 176 ) ( -728 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 190 192 ) ( -728 190 176 ) ( -728 190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 322 176 ) ( -728 190 176 ) ( -712 190 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 322 192 ) ( -728 190 192 ) ( -728 322 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 322 192 ) ( -728 322 176 ) ( -712 322 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -712 322 192 ) ( -712 190 176 ) ( -712 190 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 29
+{
+( -322 696 192 ) ( -322 712 176 ) ( -322 712 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 696 192 ) ( -322 696 176 ) ( -322 696 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 712 176 ) ( -322 696 176 ) ( -190 696 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 712 192 ) ( -322 696 192 ) ( -322 712 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 712 192 ) ( -322 712 176 ) ( -190 712 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -190 712 192 ) ( -190 696 176 ) ( -190 696 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+// brush 30
+{
+( -352 -176 192 ) ( -720 160 176 ) ( -720 160 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -720 160 176 ) ( -706 168 192 ) ( -720 160 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -162 176 ) ( -720 160 176 ) ( -352 -176 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -162 192 ) ( -720 160 192 ) ( -706 168 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -162 192 ) ( -706 168 176 ) ( -344 -162 176 ) CentralHall/ExitTransparent 0 0 0 1 1
+( -344 -162 192 ) ( -352 -176 176 ) ( -352 -176 192 ) CentralHall/ExitTransparent 0 0 0 1 1
+}
+}

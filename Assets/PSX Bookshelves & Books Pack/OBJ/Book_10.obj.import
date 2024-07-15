@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpkectneotehg"
+path="res://.godot/imported/Book_10.obj-f0588c80069380b5fa5fa69620b18e8f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Book_10.obj-f0588c80069380b5fa5fa69620b18e8f.mesh"]
+
+source_file="res://Assets/PSX Bookshelves & Books Pack/OBJ/Book_10.obj"
+dest_files=["res://.godot/imported/Book_10.obj-f0588c80069380b5fa5fa69620b18e8f.mesh", "res://.godot/imported/Book_10.obj-f0588c80069380b5fa5fa69620b18e8f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

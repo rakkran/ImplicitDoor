@@ -1,0 +1,84 @@
+[gd_resource type="VisualShader" load_steps=10 format=3 uid="uid://bf3t5jwyaa6d7"]
+
+[ext_resource type="Texture2D" uid="uid://ctd4qpn0onskf" path="res://textures/CentralHall/Black.jpg" id="1_04m3k"]
+
+[sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_vfii2"]
+texture = ExtResource("1_04m3k")
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id="VisualShaderNodeVectorDecompose_5gmk0"]
+
+[sub_resource type="Image" id="Image_anqwv"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="Image" id="Image_n762w"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="Image" id="Image_35u4x"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="Image" id="Image_vf03y"]
+data = {
+"data": PackedByteArray(255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255, 255, 0, 255, 255),
+"format": "RGBA8",
+"height": 4,
+"mipmaps": false,
+"width": 4
+}
+
+[sub_resource type="ImageTexture3D" id="ImageTexture3D_oru2m"]
+_images = Array[Image]([SubResource("Image_anqwv"), SubResource("Image_n762w"), SubResource("Image_35u4x"), SubResource("Image_vf03y")])
+
+[sub_resource type="VisualShaderNodeTexture3D" id="VisualShaderNodeTexture3D_66iqi"]
+texture = SubResource("ImageTexture3D_oru2m")
+
+[resource]
+code = "shader_type spatial;
+render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_schlick_ggx;
+
+uniform sampler2D tex_frg_2;
+
+
+
+void fragment() {
+// Texture2D:2
+	vec4 n_out2p0 = texture(tex_frg_2, UV);
+
+
+// VectorDecompose:3
+	float n_out3p0 = vec3(n_out2p0.xyz).x;
+	float n_out3p1 = vec3(n_out2p0.xyz).y;
+	float n_out3p2 = vec3(n_out2p0.xyz).z;
+
+
+// Output:0
+	ALPHA = n_out3p2;
+
+
+}
+"
+nodes/fragment/0/position = Vector2(240, 160)
+nodes/fragment/2/node = SubResource("VisualShaderNodeTexture_vfii2")
+nodes/fragment/2/position = Vector2(-260, 180)
+nodes/fragment/3/node = SubResource("VisualShaderNodeVectorDecompose_5gmk0")
+nodes/fragment/3/position = Vector2(53.2757, 202.178)
+nodes/fragment/4/node = SubResource("VisualShaderNodeTexture3D_66iqi")
+nodes/fragment/4/position = Vector2(-320, 460)
+nodes/fragment/connections = PackedInt32Array(2, 0, 3, 0, 3, 2, 0, 1)

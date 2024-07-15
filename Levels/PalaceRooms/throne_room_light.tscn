@@ -1,0 +1,113 @@
+[gd_scene load_steps=24 format=3 uid="uid://bylx8ktbgbjic"]
+
+[ext_resource type="PackedScene" uid="uid://dgsseegsqebjf" path="res://Assets/medieval_fire_pit_fogon_medieval/scene.gltf" id="1_wy6un"]
+[ext_resource type="Texture2D" uid="uid://bub54w38tk41h" path="res://Assets/FireFrames/fire1_ 01.png" id="2_lhywk"]
+[ext_resource type="Texture2D" uid="uid://cc82l208ql12x" path="res://Assets/FireFrames/fire1_ 02.png" id="3_fdpiv"]
+[ext_resource type="Texture2D" uid="uid://dlqdg0b6jtxb2" path="res://Assets/FireFrames/fire1_ 11.png" id="4_0v110"]
+[ext_resource type="Texture2D" uid="uid://bd4m2awjvy7dy" path="res://Assets/FireFrames/fire1_ 12.png" id="5_3px5a"]
+[ext_resource type="Texture2D" uid="uid://dxrrbl1fk6va0" path="res://Assets/FireFrames/fire1_ 13.png" id="6_lqr8i"]
+[ext_resource type="Texture2D" uid="uid://citujccxk5bbi" path="res://Assets/FireFrames/fire1_ 03.png" id="7_6pau7"]
+[ext_resource type="Texture2D" uid="uid://bfpcef0kywkkv" path="res://Assets/FireFrames/fire1_ 04.png" id="8_alo5o"]
+[ext_resource type="Texture2D" uid="uid://y0y4xooh4ows" path="res://Assets/FireFrames/fire1_ 05.png" id="9_ehv3n"]
+[ext_resource type="Texture2D" uid="uid://by6ex822pkdu8" path="res://Assets/FireFrames/fire1_ 06.png" id="10_7imj8"]
+[ext_resource type="Texture2D" uid="uid://daxvvsc1a6hjb" path="res://Assets/FireFrames/fire1_ 07.png" id="11_xopt5"]
+[ext_resource type="Texture2D" uid="uid://ufrwe80b6nmv" path="res://Assets/FireFrames/fire1_ 08.png" id="12_v22i7"]
+[ext_resource type="Texture2D" uid="uid://4q4nl1bhbib" path="res://Assets/FireFrames/fire1_ 09.png" id="13_1r8hp"]
+[ext_resource type="Texture2D" uid="uid://cwb25v8ywurfa" path="res://Assets/FireFrames/fire1_ 10.png" id="14_j7fh2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xnlol"]
+size = Vector3(5.31564, 2.67963, 5.64035)
+
+[sub_resource type="Gradient" id="Gradient_1cfn5"]
+offsets = PackedFloat32Array(0, 0.763636, 0.990909)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vtov5"]
+gradient = SubResource("Gradient_1cfn5")
+
+[sub_resource type="Curve" id="Curve_ednsw"]
+_data = [Vector2(0.0434783, 0.373626), 0.0, 0.0, 0, 0, Vector2(0.347826, 0.791209), 0.0, 0.0, 0, 0, Vector2(0.978261, 0.516483), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_g8lmi"]
+curve = SubResource("Curve_ednsw")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_aoy03"]
+emission_shape = 1
+emission_sphere_radius = 0.5
+gravity = Vector3(0, 5, 0)
+scale_min = 3.0
+scale_max = 3.0
+scale_curve = SubResource("CurveTexture_g8lmi")
+color_ramp = SubResource("GradientTexture1D_vtov5")
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_sbjru"]
+frames = 13
+speed_scale = -15.3
+frame_0/texture = ExtResource("2_lhywk")
+frame_1/texture = ExtResource("3_fdpiv")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("7_6pau7")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("8_alo5o")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("9_ehv3n")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("10_7imj8")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("11_xopt5")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("12_v22i7")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("13_1r8hp")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("14_j7fh2")
+frame_9/duration = 1.0
+frame_10/texture = ExtResource("4_0v110")
+frame_10/duration = 1.0
+frame_11/texture = ExtResource("5_3px5a")
+frame_11/duration = 1.0
+frame_12/texture = ExtResource("6_lqr8i")
+frame_12/duration = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wd5j0"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = SubResource("AnimatedTexture_sbjru")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_3b57s"]
+material = SubResource("StandardMaterial3D_wd5j0")
+
+[node name="ThroneRoomLight" type="Node3D"]
+
+[node name="FirePit" parent="." instance=ExtResource("1_wy6un")]
+transform = Transform3D(-0.499555, 0.0421721, 0.865255, 0.0210861, 0.99911, -0.0365221, -0.866025, 0, -0.5, -16.8216, 0.465457, 13.6886)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FirePit"]
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FirePit/StaticBody3D"]
+transform = Transform3D(-0.499555, 0.021086, -0.866025, 0.0421721, 0.99911, 6.04162e-10, 0.865255, -0.0365221, -0.5, -4.57377, 0.962062, 11.8783)
+shape = SubResource("BoxShape3D_xnlol")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -4.17115, 2.26476, 11.7975)
+amount = 20
+visibility_aabb = AABB(-4, -4.10107, -3.62056, 8, 8, 7.24113)
+process_material = SubResource("ParticleProcessMaterial_aoy03")
+draw_pass_1 = SubResource("PlaneMesh_3b57s")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -4.17115, 2.26476, 11.7975)
+amount = 20
+visibility_aabb = AABB(-4, -4.50942, -3.62056, 8, 8.8167, 7.24113)
+process_material = SubResource("ParticleProcessMaterial_aoy03")
+draw_pass_1 = SubResource("PlaneMesh_3b57s")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4156, 1.87482, 11.5988)
+light_color = Color(1, 0.592157, 0.0901961, 1)
+light_energy = 2.485
+omni_range = 50.4513

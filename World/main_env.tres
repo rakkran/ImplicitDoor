@@ -1,0 +1,14 @@
+[gd_resource type="Environment" load_steps=3 format=3 uid="uid://c8hcd4q8vyvj4"]
+
+[ext_resource type="Material" uid="uid://bbd46l8etu4gy" path="res://World/main_sky.tres" id="1_ksvo4"]
+
+[sub_resource type="Sky" id="Sky_wcn86"]
+sky_material = ExtResource("1_ksvo4")
+
+[resource]
+background_mode = 2
+background_energy_multiplier = 1.32
+sky = SubResource("Sky_wcn86")
+ambient_light_source = 2
+ambient_light_color = Color(0.619608, 0.0745098, 0.0745098, 1)
+ambient_light_energy = 2.22

@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1vdpu56ij5gp"]
+
+[ext_resource type="PackedScene" uid="uid://djisi072x3ysq" path="res://World/Interaction/interactable.tscn" id="1_31py0"]
+[ext_resource type="Script" path="res://World/Interaction/speech_interactable.gd" id="2_t3qci"]
+[ext_resource type="Resource" uid="uid://dw7fkwrg63ow" path="res://World/Dialogue/test.dialogue" id="3_6bbmr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mkkdf"]
+
+[node name="SpeechInteractable" instance=ExtResource("1_31py0")]
+script = ExtResource("2_t3qci")
+dialogue_resource = ExtResource("3_6bbmr")
+dialogue_start = "start"
+prompt_text = "Testy McTestface"
+
+[node name="CollisionShape3D" parent="." index="0"]
+shape = SubResource("BoxShape3D_mkkdf")
+
+[connection signal="focused" from="." to="." method="_on_focused"]
+[connection signal="interacted" from="." to="." method="_on_interacted"]
+[connection signal="unfocused" from="." to="." method="_on_unfocused"]

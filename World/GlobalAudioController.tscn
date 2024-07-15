@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://f2p12kr567xf"]
+
+[ext_resource type="Script" path="res://World/GlobalAudioController.gd" id="1_sx3hj"]
+
+[node name="GlobalAudioController" type="Node"]
+script = ExtResource("1_sx3hj")
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+bus = &"Music"

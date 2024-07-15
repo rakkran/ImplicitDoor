@@ -1,0 +1,251 @@
+[gd_scene load_steps=14 format=3 uid="uid://bykqs33vsryq"]
+
+[ext_resource type="Script" path="res://UI/game_ui.gd" id="1_bay23"]
+[ext_resource type="Script" path="res://UI/Debug/fps_counter.gd" id="1_dbjdq"]
+[ext_resource type="Theme" uid="uid://dk12a6fewevyp" path="res://UI/UI_Theme.tres" id="1_jeabr"]
+[ext_resource type="Script" path="res://UI/Interaction/interaction_prompt.gd" id="2_q5oy6"]
+[ext_resource type="Script" path="res://UI/Interaction/interaction_text.gd" id="4_68ge8"]
+[ext_resource type="Script" path="res://UI/Interaction/interaction_book.gd" id="5_jy7d8"]
+[ext_resource type="FontFile" uid="uid://mrdr5067ejlt" path="res://Assets/Fonts/Beholden/Beholden-Bold.ttf" id="7_c25xf"]
+
+[sub_resource type="Animation" id="Animation_qhxax"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_fw3ji"]
+resource_name = "dissolve"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0lem5"]
+_data = {
+"RESET": SubResource("Animation_qhxax"),
+"dissolve": SubResource("Animation_fw3ji")
+}
+
+[sub_resource type="Animation" id="Animation_ddids"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DayCounter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ngtmg"]
+resource_name = "transition"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DayCounter:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 5.5, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hxuyr"]
+_data = {
+"RESET": SubResource("Animation_ddids"),
+"transition": SubResource("Animation_ngtmg")
+}
+
+[node name="GameUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_jeabr")
+script = ExtResource("1_bay23")
+
+[node name="Debug" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="FPS" type="Label" parent="Debug"]
+offset_right = 114.0
+offset_bottom = 23.0
+script = ExtResource("1_dbjdq")
+
+[node name="InteractionInfo" type="CanvasLayer" parent="."]
+
+[node name="InteractionText" type="RichTextLabel" parent="InteractionInfo"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -329.0
+offset_top = -146.0
+offset_right = 329.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme = ExtResource("1_jeabr")
+theme_override_font_sizes/normal_font_size = 24
+text = "Test"
+fit_content = true
+script = ExtResource("4_68ge8")
+
+[node name="InteractionPrompt" type="RichTextLabel" parent="InteractionInfo"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 256.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_jeabr")
+theme_override_font_sizes/normal_font_size = 24
+script = ExtResource("2_q5oy6")
+
+[node name="BookInteraction" type="CanvasLayer" parent="."]
+layer = 2
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="BookInteraction"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0117647, 0.0117647, 0.0117647, 1)
+
+[node name="Control" type="Control" parent="BookInteraction"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="BookInteraction/Control"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -262.0
+offset_top = -262.0
+offset_right = 252.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BookText" type="RichTextLabel" parent="BookInteraction/Control/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 23
+text = "HELLO WORLD"
+script = ExtResource("5_jy7d8")
+
+[node name="HUD" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 619.0
+offset_bottom = 196.0
+mouse_filter = 2
+theme = ExtResource("1_jeabr")
+
+[node name="Objective" type="RichTextLabel" parent="HUD"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/bold_font = ExtResource("7_c25xf")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+bbcode_enabled = true
+text = "[b]Objective:[/b]
+"
+
+[node name="SubObjectives" type="RichTextLabel" parent="HUD"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/bold_font = ExtResource("7_c25xf")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+bbcode_enabled = true
+text = "[b]Sub-Objectives[/b]"
+
+[node name="SceneTransition" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="ColorRect" type="ColorRect" parent="SceneTransition"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransition"]
+libraries = {
+"": SubResource("AnimationLibrary_0lem5")
+}
+
+[node name="DayContainer" type="CenterContainer" parent="SceneTransition"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="DayCounter" type="RichTextLabel" parent="SceneTransition/DayContainer"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(400, 300)
+layout_mode = 2
+theme = ExtResource("1_jeabr")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "DAY 7"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SceneTransition/DayContainer"]
+libraries = {
+"": SubResource("AnimationLibrary_hxuyr")
+}

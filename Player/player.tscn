@@ -1,0 +1,79 @@
+[gd_scene load_steps=12 format=3 uid="uid://cykijwso4bh57"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_5rltw"]
+[ext_resource type="Script" path="res://Player/PlayerStates/PlayerStateMachine.gd" id="2_kjawx"]
+[ext_resource type="PackedScene" uid="uid://ddehd4t6e2oqs" path="res://World/Interaction/player_interactor.tscn" id="2_xi8h3"]
+[ext_resource type="Shader" path="res://Player/screen.gdshader" id="3_jtmcb"]
+[ext_resource type="Script" path="res://Player/PlayerStates/PlayerWalk.gd" id="3_u22vj"]
+[ext_resource type="Script" path="res://Player/PlayerStates/PlayerInteract.gd" id="4_7r8d4"]
+[ext_resource type="AudioStream" uid="uid://ce7vgtmdkevkw" path="res://Assets/Audio/SFX/footstep_concrete_001.ogg" id="6_rdirb"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yja1b"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_8thd6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_srvsw"]
+render_priority = 0
+shader = ExtResource("3_jtmcb")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_lwivy"]
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1, 0)
+collision_mask = 38
+script = ExtResource("1_5rltw")
+
+[node name="StandingCollisionShape" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_yja1b")
+
+[node name="Neck" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+
+[node name="Head" type="Node3D" parent="Neck"]
+
+[node name="Camera3D" type="Camera3D" parent="Neck/Head"]
+
+[node name="PlayerInteractor" parent="Neck/Head/Camera3D" instance=ExtResource("2_xi8h3")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1.6, 0)
+
+[node name="CollisionShape3D" parent="Neck/Head/Camera3D/PlayerInteractor" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0212759, 0.685307, -0.780892)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Neck/Head/Camera3D"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, -0.883014)
+mesh = SubResource("QuadMesh_8thd6")
+surface_material_override/0 = SubResource("ShaderMaterial_srvsw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_lwivy")
+
+[node name="Pointers" type="Node3D" parent="."]
+
+[node name="FootPointer" type="RayCast3D" parent="Pointers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0)
+target_position = Vector3(0, 0, -0.55)
+
+[node name="StairCheck" type="RayCast3D" parent="Pointers"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7, 0)
+target_position = Vector3(0, 0, -0.55)
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("2_kjawx")
+initial_state = NodePath("PlayerWalk")
+
+[node name="PlayerInteract" type="Node" parent="StateMachine"]
+script = ExtResource("4_7r8d4")
+
+[node name="PlayerWalk" type="Node" parent="StateMachine"]
+script = ExtResource("3_u22vj")
+
+[node name="FootstepPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_rdirb")
+bus = &"SFX"
+
+[node name="FootstepTimer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+autostart = true
+
+[editable path="Neck/Head/Camera3D/PlayerInteractor"]

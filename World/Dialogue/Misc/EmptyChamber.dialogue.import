@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://6d2ecuh4owrt"
+path="res://.godot/imported/EmptyChamber.dialogue-8e95cc71650533d18f515f95f47d9b6d.tres"
+
+[deps]
+
+source_file="res://World/Dialogue/Misc/EmptyChamber.dialogue"
+dest_files=["res://.godot/imported/EmptyChamber.dialogue-8e95cc71650533d18f515f95f47d9b6d.tres"]
+
+[params]
+
+defaults=true

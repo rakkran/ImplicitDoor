@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://11nsir5ihqe"
+path="res://.godot/imported/library.map-f18706b842ad99b1f4463709511ae766.tres"
+
+[deps]
+
+source_file="res://Models/AssortedPalaceRooms/library.map"
+dest_files=["res://.godot/imported/library.map-f18706b842ad99b1f4463709511ae766.tres"]
+
+[params]
+

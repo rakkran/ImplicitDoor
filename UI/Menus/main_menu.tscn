@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://cl62ay0syt34p"]
+
+[ext_resource type="Theme" uid="uid://dk12a6fewevyp" path="res://UI/UI_Theme.tres" id="1_qgk02"]
+[ext_resource type="Script" path="res://UI/Menus/menu.gd" id="2_c7v2b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xt4mi"]
+bg_color = Color(0.687215, 0.687215, 0.687215, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ttypb"]
+bg_color = Color(0.686275, 0.686275, 0.686275, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qgk02")
+script = ExtResource("2_c7v2b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.82606, 0.82606, 0.82606, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -227.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 0
+
+[node name="Begin" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxFlat_xt4mi")
+text = "BEGIN"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
+theme_override_styles/hover = SubResource("StyleBoxFlat_ttypb")
+text = "QUIT"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -52.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+theme = ExtResource("1_qgk02")
+theme_override_colors/default_color = Color(0.847059, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 128
+bbcode_enabled = true
+text = "[center]THE IMPLICIT DOOR[/center]"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme = ExtResource("1_qgk02")
+theme_override_colors/default_color = Color(0.847059, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]SEVEN SEALS. SEVEN RINGS. SEVEN BRIDES FOR THE SCARLET KING. [/center]"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Begin" to="." method="_on_begin_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

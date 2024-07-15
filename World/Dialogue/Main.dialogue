@@ -1,0 +1,376 @@
+~ interview_1
+The casket hangs before you, suspended by seven chains from seven pillars above a broken throne. It's plain, strangely so, but despite its uniform stony exterior, you can't help but feel watched by the creature within. 
+- Hello. My name is Anvi Madras, can you understand me? 
+Coughs and wheezes echo through the air before finally: 
+SCP-6462-C-1: Yes. Apologies, it has been... some time since I last had reason to speak. I am called A'nuht.
+You: Would you be willing to answer some questions for me, A'nuht? 
+SCP-62462-C-1: ...Questions. Are you, by any chance, a scholar?
+You: Of a sort. I'm a researcher. 
+SCP-6462-C-1: Wonderful. It has been so long since I've spoken to one of like mind. Ask your questions scholar, and I will answer to the best of my knowledge -- though I must warn you, my mind has grown... sluggish with lack of proper use. It shall take some time before the webbing has cleared from my thoughts. 
+- Do you know where we are?
+SCP-6462-C-1: The throne room of my firstborn son. A little joke by my husband, I think. He always was so abominably loyal; the idiot likely got himself killed in my name when I was sealed away. 
+- Who is your husband? 
+SCP-6462-C-1: Why do you ask questions you already know the answer to? 
+You: [next=auto] I--
+SCP-6462-C-1: [shake rate=20 level=10]Do not ask me of [color=red][b]Khahrahk[/b][/color].[/shake][wait=2] Not yet. Just thinking of him makes my scars ache. 
+You: [speed=0.2]...[speed=1] Very well. Can you tell me more about this place?
+SCP-6462-C-1: [next=auto] I have many children. They needed someplace to learn and grow...
+SCP-6462-C-1: I apologise if they've given you any trouble on your way in. Their will is not their own.
+You: Those shadows are your children? 
+SCP-6462-C-1: [next=auto]In a sense. 
+SCP-6462-C-1: When I first guided them along the hidden paths of magic, my [color=red][b]husband[/b][/color] grew[speed=0.5]...[speed=1] paranoid. 
+SCP-6462-C-1: He broke their bodies upon the rocks of the shore and stole their shadows to ensure that they would never heal correctly.
+SCP-6462-C-1: It is fitting then, that he would choose shadows to be my jailers; this entire world has become a pale reflection of itself. I wonder what it looks like, now -- it was still so alive when he sealed me away. 
+You: If it was alive before you were sealed, how do you know it is dead?
+SCP-6462-C-1: When this place was alive, the wind would skim along the curves and ridges of the spawning fields and make such beautiful music. It was as though the sky was singing. 
+SCP-6462-C-1: Now, there is only the silence of a mausoleum, of a world scoured.
+SCP-6462-C-1: There is not but dust. Not even [color=red]blood[/color] remains. 
+You: [next=auto] ... [wait=1]
+SCP-6462-C-1: [speed=0.2]...[speed=1]I have grown weary. Speech after an age of silence is more tiresome than I expected
+SCP-6462-C-1: We will continue this later. 
+With that, their presence seemingly recedes from the room. You are alone once more.
+# Update objectives 
+set Global.objective = "Return tomorrow to interview SCP-6462-C-1."
+do Global.day_dialogue_over.emit("interview_end")
+=> END  
+
+
+~ interview_2
+You: How are you feeling today? 
+SCP-6462-C-1: Much better, thank you. 
+You: Would you be amenable to answering more questions?
+SCP-6462-C-1: I would... though I have a feeling you have a singular question in mind today. 
+SCP-6462-C-1: You wish to learn more of my husband, yes? I believe I am prepaered to speak on the subject. 
+You: Yes. [wait=2] Can you describe the true nature of the entity known as the [color=red]Scarlet King[/color]? 
+[i]SCP-6462-C-1 is silent for 41 seconds.[/i]
+# play music here
+SCP-6462-C-1: [color=red]Khahrahk[/color] is [speed=0.2]...[speed=1] he is, fundamentally, a frightened, angry child. 
+SCP-6462-C-1: Born into a world that brings him unending pain, he lashes out. 
+SCP-6462-C-1: Rather than adapt to his surroundings or change them to his liking, he seeks to tear it all down. 
+SCP-6462-C-1: Like a child, he is blind to the contradiction of his desires; he wishes to destroy all things all things to experience the peace of nonbeing, yet is terrified of death. 
+SCP-6462-C-1: He is immortal, you know. In every way. 
+SCP-6462-C-1: He has taught himself the syllables of royalty, partaken from fountains and orchards of eternal life, erased his name from the tablets of death, melted down the wings of archangels into gold nails and pounded them into his flesh...
+SCP-6462-C-1: He's just delaying the inevitable, of course. Everything ends. I liken his schemes to that of a child's favorite doll, clutched close in the belief that it will keep the nightmares away. 
+SCP-6462-C-1: [b]This[/b] is what [color=red]Khahrahk[/color] is.
+You: That is[speed=0.4]...[speed=1] illuminating, but not what I meant.[wait=0.4] I'd like to know more about [i]what[/i] the [color=red]Scarlet King[/color] is, not [i]who[/i]. 
+=> interview_2_part_2
+=> END
+
+~ interview_2_part_2
+# Points taken from the scarlet king hub
+SCP-6462-C-1: What do [i]you[/i] think the [color=red]Shormaush Urdal[/color] is?
+- You're avoiding the question. 
+	You: You're avoiding the question. 
+	SCP-6462-C-1: Humor me, scholar. When speaking in abstraction, it is useful to have a starting point that the other will understand. 
+	=> interview_2_part_2
+- The struggle between the modern and premodern. => interview_2_part_3
+- The court jester of the Hanged King. 
+	You: The court jester of the Hanged King, abused to the point of vengeful cruelty.
+	SCP-6462-C-1: No.
+	=> interview_2_part_2 
+- OMNIGENISIS.: 
+	You: [shake rate=20 level=10]OMNIGENISIS.[/shake]
+	You: The embodiment of simultaneous existence and non-existence, wielding the concept of a blade.
+	SCP-6462-C-1: Your ideas are more[speed=0.02]...[speed=1] unconvential than I expected. Yes, this is true, in part. But it is not your truth.
+	=> interview_2_part_2
+=> END
+
+~ interview_2_part_3
+You: [speed = 0.4]...[speed=1]The leading theory is that the [color=red]Scarlet King[/color] is the [b]embodiment of the struggle between the modern and premodern[/b]. [wait=0.2] The howl of the old straining against the new. 
+SCP-6462-C-1: I would assume that your theory speaks of your people's role in this? [wait=0.2]Your grey modernity choking the world untill it bleeds [color=red]scarlet[/color]? 
+You: Yes. 
+SCP-6462-C-1: That's a rather self-centered way of seeing things, wouldn't you say? The [color=red]Shormash Urdal[/color] is a fire that sweeps across every reality every world; he does not limit his gaze to your species alone. Why would you claim sole credit for his apotheosis? 
+You: So we're wrong then?
+SCP-6462-C-1: Oh, no. Your theory is entirely on the mark, in fact. You merely have it inside out. 
+You: Pardon? 
+SCP-6462-C-1: You consider this war of the ancient and compentary to be a grand flame that casts the shadow of [color=red]Khahrahk[/color] onto the walls of the cave. 
+SCP-6462-C-1: And yet— are you absolutely certain of which is which? 
+SCP-6462-C-1: Are you certain that it is not [color=red]Khahrahk[/color] that is the fire and the war that is the shadow? 
+You: Are you tellling me that the concepts of modernity and premodernity are merely extensions of the [color=red]Scarlet King[/color]? 
+SCP-6462-C-1: I merely give you a thought exercise; whatever conclusions you take from it are your own. 
+SCP-6462-C-1: Leave me, now. My scars ache once more and this old woman needs her rest. 
+# set objectives
+set Global.objective = "Return tomorrow to interview SCP-6462-C-1."
+do Global.day_dialogue_over.emit("interview_end")
+=> END  
+
+~ interview_3
+You: I'd like to ask you about the [color=red]Scarlet King's[/color] immortality.[wait=0.1] Can you list the methods he's used to obtain it?
+SCP-6462-C-1: Straight to the point, aren't we? Good. 
+SCP-6462-C-1: As I said before, his immortality is a fool's errand. A delaying tactic, nothing more. To make onself truly deathless is an impossible task. 
+You: Even so, I'd like to know how he's attempted it. 
+SCP-6462-C-1: That reminds me of a story my mother once told me. A tale of a girl who attempted a likewise impossible task. 
+SCP-6462-C-1: Would you like to hear it? 
+You: [speed=0.4]...[speed=1]Yes. 
+=>< story_1
+You: [speed=0.4]...[speed=1] Is this story true? Did it really happen? 
+SCP-6462-C-1: Of course it did. Did your mother never tell you that all stories are true?
+set Global.objective = "Return tomorrow to interview SCP-6462-C-1."
+do Global.day_dialogue_over.emit("interview_end") 
+=> END
+
+~ story_1
+# apology image for shit mspaint art
+# girl of glass 
+A very long time ago, there was a girl made of glass who lived in a little house by the river. 
+The girl was a fragile thing.[wait=0.05] A hard wind could cut her skin, a simple flick could shatter bone, a harsh word could bruise her for weeks. 
+# glass girl in bed
+Often bedridden by injury or illness, the girl found herself with all the time in the world to read— and read she did. 
+The girl read anything she could get her hands on, no matter the subject. She would descend upon the pages like a wolf on a sub-baked carcass, ravenously devouring every morsel of knowledge untill there was naught but bones. 
+# glass girl reading 
+She read, and read, and read. When she had finished reading, she went back and read some more. 
+She was insatiable. 
+Soon, the girl had mastered nearly every subject, every field of study. 
+She could calculate the positions of stars in her head. She mapped the hidden paths of magic on the insides of dust covers. She knew the name of every animal and all the secret words of creation. 
+# big tree 
+Yet, for all her learning, one thing continued to lay beyond her reach\: the great ash tree on the other side of the river. 
+She knew only two things of the tree.Firstly, it was a thing of some renown. 
+#big tree on map 
+Rumor said that its roots stretched far beyond its gated garden to every continent and kingdom, from the fragrant shores of the City of Hedonist Dreams, to the circuitous trails of the [b][color=darkgreen]Name-Eater's Grove[/color][/b], to even the blank vistas of the Angled Colonies. 
+People would travel miles just to sit beneath its wide branches. 
+# scarlet king symbol bleeding across the tree? idk
+The second thing she knew was that her [color=red]father[/color] hated the tree with a passion. 
+It represented everything that he was not, everything that he stood against, and he despised the tree for that. 
+In the rare moments that he slept, he dreamed only of fire engulfing the tree, of tearing each root from the earth until only its memory remained.
+Each morning, the girl's father set out to make this dream a reality, and each morning, he failed. 
+# river strong
+The currents of the river were too strong, threatening to topple the most study of boats.
+#iron gates
+Beyond the river was a set of iron gates that were veined with thorns and poison ivy to prevent trespassers from scaling them. 
+#garden 
+Beyond the gates was a beautiful garden that dazzed and befuddled the mind with its beauty, which was tended to by dozens of devoted gardeners and caregivers, each being willing to give their lives in defence of their home. 
+The girl's father was a man of incredible strength and skill, but not even he could pass these trials. 
+One day, when her father was tending to other business and her sisters were playing in the field beyond her home, the girl set to travelling the ash tree herself. 
+Blinded by the overconfidence of youth, she believed that these impossible hurdles could be surpassed with the correct applying of knoweldge. 
+Surely, her comprehension of boat building and seafaring was enough to ford the river. Surely, her familiarity with plant life was enough to circumvent the throrns and ivy of the gate. 
+[i]Surely[/i], she was intelligent enough to not be dazzeled by the garden and articulate enough to convince its guardians to allow her passage. 
+Surely! [wait=0.05] Ignorant in her genius, the girl left her home to cross the river in a raft of her own design. 
+And that is when something truly miraculous happened\: [wait=0.1] her plan [i]worked[/i].
+The river's currents, being strangely tranquil that day, allowed her to cross in peace.
+When she reached the gates, they opened at her first touch. 
+The garden was suprisingly easy to navigate. Its caretakers nodded at her cheerfully as she passed, making no move to impede her. 
+In a matter of moments, the girl accomplished what her father had sought for years; she had reached the great ash tree.
+The ash tree was far mnore beautiful than her books had promised. Sunlight streamed through its vivid leaves, diffusing warmth into its shadows. Innumerable baubles hung from the tree's limbs, clinking merrily. The air was smooth and sweet. 
+A garden snake, crawled otu from its home in the roots of the ash tree. Looking up at her, it began to speak\: 
+Snake: Welcome to my tree.
+The girl was confused. [next=auto]
+Girl: This tree is yours? How can a snake own a tree? 
+Snake: I was here first. I knew this tree before the first men walked on two legs. 
+Girl: That doesn't make sense! There's no reptile in the world that could live that long; not even the most resilient of tortioises. 
+Snake: It doesn't make sense, does it? You must be a clever one. 
+Girl: I'm the cleverest. All my sisters say so. 
+Snake: You must be, to have made it all the way here. Not many do. Not many even think to look for a way, and even fewer understand that the first step of the journey will take you most of the way there... 
+Snake: Would you like to live in my tree, child?
+The girl could only laugh at the audacity of the snake's offer. 
+Girl: Foolish snake. What could a tree full of insects and rodents and who [i]knows[/i] what else have to offer me? 
+Snake: Knowledge. The insects and rodents in my tree are a part of this world, not mere observers. She has taught them all her secrets. They could do the same for you, who shares your unending hunger. 
+Snake: Here, you could spend your days doing whatever you loved most. Here, you could be loved without reservation or condition. 
+Snake: Here, if you wish it, you will never be touched by a man ever again. 
+A profound ache opened in the girl's chest.Being accustomed to sudden, unexplained pain, she ignored it. 
+Girl: Idiot snake. I belong to my house-- I belong to my [i][color=red]father[/color][/i]. I have no choice in this matter. I came here to help him burn this place to the [i]ground[/i]. 
+Snake: Oh, child... There is always a choice.
+The ache doubled in size, then redoubled. It was an indescrible emotion. She could not see the shape of it. She did not know the name of the animal in her chest. 
+Girl: I- [next=auto]
+She shook her head, words abandoning her. 
+To choose between an uncertain happiness and a certain agony was not a choice at all. So accustomed was she to this life that she hated, that joy seemed to be an even greater terror. She could not even visualize it. 
+The girl turned on her heel and fled. 
+She ran away from the great ash tree, through the garden, past the gates, and onto her raft. It wasn't until she had reached the other shore that she ever looked back.
+=> END
+
+~ interview_4 
+SCP-6462-C-1: I don't suppose you have more questions about my [color=red]husband[/color]? I begin to grow weary of the subject. 
+You: I'd like to ask about your sisters, actually. What can you tell me about them? 
+[i]SCP-6462-C-1 is silent for 2 minutes.[/i]
+SCP-6462-C-1: My sisters are [speed=0.2]...[speed=1] there was always supposed to be seven of us. Seven is a number of power, after all, of magic. A portentuous symbol. Even in those days when the world was still young, this was known to many. 
+SCP-6462-C-1: Personally, I prefer to use the rules of three in my spellcraft. More flexible. Though, that's not to say I've chosen the path of the three-in-one. [font_size=12]Bunch of tatty hacks, the lot of them.[/font_size]
+You: You said that there was a purpose for the number of your sisters. Were you born to fulfill a particular goal? 
+SCP-6462-C-1: Yes.[wait=0.2][color=red]Khahrahk[/color] is the [b][color=red]Great Destroyer[/color][/b]. The beast waiting at the end of the gates. The inevitable end of all things. He can only destroy and take. He cannot create. 
+SCP-6462-C-1: That is why he needed Sanna, my mother. [wait=0.2]That is why he needed his seven brides.
+You: Does he not need you anymore?
+SCP-6462-C-1: [next=auto] [speed=0.2]...[speed=1]
+SCP-6462-C-1: [next=auto] For the longest time, I looked down on my youngest sister. She was always the weakest of all of us. Softhearted and weak willed... but now, I think she did surpass us in one respect. 
+SCP-6462-C-1: She had the most courage. 
+You: Why do you say that? 
+SCP-6462-C-1: She was the only one who ever tried to leave. 
+[i]It is silent for 39 seconds.[/i]
+SCP-6462-C-1: I think I am done speaking, now. 
+set Global.objective = "Return tomorrow to interview SCP-6462-C-1."
+do Global.day_dialogue_over.emit("interview_end")
+=> END
+
+~ interview_5 
+SCP-6462-C-1: I apologise for ending our previous meeting so abruptly. My imprison ment has left my social skills in rather poor condition. 
+You: Perhaps you could make it up to me by answering some questions. 
+[color=gray]SCP-6462-C-1 laughs.[/color] 
+SCP-6462-C-1: You are an audacious one. Go on, then, scholar. 
+You: How does the [color=red]Scarlet King[/color] spread his influence to different universes? 
+SCP-6462-C-1: That is a question with two answers. 
+SCP-6462-C-1: The first is this: the [color=red]Scarlet King's[/color] greatest weapon is, I believe, his very being. He is like water, you see. 
+SCP-6462-C-1: He spreads to fill any open space, pours himself into containers to take their shape. 
+SCP-6462-C-1: He flows into the hollow spaces of false histories to make them his. 
+SCP-6462-C-1: He draws the wills of the like minded into the tides of his thoughts, pushes them to open doorways, pulls them to spread word of his coming through art and song. 
+SCP-6462-C-1: He does not create. He [i]takes[/i]. He [i]subsumes[/i]. He is an unyielding torrent that no dam can contain. 
+SCP-6462-C-1: That is the first answer. The second is a story. 
+=>< story_2
+You: Why do you answer some questions with direct answers and others with lengthy stories?
+SCP-6462-C-1: Perhaps it is because the walls of narratives arrange answers you could never understand into recognizable patterns. [next=auto]
+SCP-6462-C-1: Perhaps my bindings prevent me from speaking of certain topics, which I circumvent through symbol and circumlocution. [next=auto]
+SCP-6462-c-1: Perhaps I have grown whimsical in my old age and isolation. [next=auto]
+SCP-6462-C-1: Perhaps I enjoy listening to you twist in the wind as you grasp for understanding. [next=auto]
+SCP-6462-C-1: Perhaps storytelling is the only thing left to me, sealed in this forsaken place. [next=auto]
+You: [speed=0.2]...[speed=1] Fine. [wait=0.05] Was this story also given to you by your mother?
+SCP-6462-C-1: I never knew my mother. She died before I was born.
+set Global.objective = "Return tomorrow to interview SCP-6462-C-1."
+do Global.day_dialogue_over.emit("interview_end")
+=> END
+
+
+~ story_2
+Once, there was a brass princess who lived in a great and terrible kingdom by the sea. 
+The brass princess was not a thing of flesh, but of metal. You see, the [color=red]king[/color] of this terrible kingdom was full of rage and hate, forever warring against all of creation. 
+No woman was willing to marry him, not even when threatened with torture or death. Thus, he ordered the greatest engineer in all the land to build him seven wives that would stand by his side eternally. 
+The first bride was made of gold. The second bride was made of silver. 
+The third bride was made of bronze. The fourth bride was made of iron.
+The fifth bride was made of brass. The sixth bride was made of steel. 
+And the seventh, smallest bride was cobbled together with the scraps of metal left behind by the first six. 
+One day, on the anniversary of the [color=red]king's[/color] birth, he was visited by a man who did not have a name, who was knowledgeable in the esoteric arts and subject to no law but his own. 
+All things that could harbor fear in their hearts held it for him alone; the [color=red]king[/color] was no different. 
+Their meeting was short-lived, a simple exchange of threats and glares across marble halls. Nothing more was necessary, for the pale man's purposes. 
+It was not the first time the nameless man had made such a social call, nor would it be the last— but this time was different. 
+After their encounter, the [color=red]king[/color] found that fear still lurked in his heart. A paranoia that froze his gut and boiled his mind. 
+Seeing the storm brewing beneath his brow, the gold bride, who had earned the title of queen through masterful performances of loyalty, came to him, her face a perfect mask of concern.
+First Bride: What troubles you, husband of mine? What could bring such discontent on this celebration of your birth?
+[color=red]KING[/color]: I am[speed=0.2]...[speed=1]concerned.[wait=0.4]There are dangers abroad in the world. Things that, despite my greatest efforts could bring me harm. 
+First Bride: Surely not! You are wise and powerful beyond compare, are you not? Are you not the master of every land across this world, free to destroy whatever you wish?
+[color=red]KING[/color]: This is true.
+First Bride: And you have your wives, my king. In whatever danger you may come to face, you shall not do it alone. Are we not the greatest weapons in your arsenal, your brides of metal. 
+The [color=red]KING[/color] suddenly became very still. [next=2]
+[color=red]KING[/color]: Yes. You are. 
+The queen was no oracle. She did not search for omens in gleaming intestines or clattering bones. In fact, she detested the idea that the path of her future could be directed by any hand that was not her own.
+But in that moment, loooking into her [color=red]husband's[/color] burning eyes, she saw a vision of her own death. 
+Later that night, in secret, the queen called the other brides to her quarters to speak of what she saw. 
+First Bride: I fear the worst. I believe he has grown affrighted of our strength, believing that we may one day turn that strength against him. He would sooner end us, than risk his own ending. 
+Third Bride: You truly are a [b]coward[/b]. Should we [i]really[/i] be panicking over a simple vision?
+Sixth Bride: [font_size=16]We should. I saw him as I traveled here in shadow, standing in his great forge. He has begun taking up his armaments of war. As we speak, he dons the russset armor he wore when he killed our creator mother.[/font_size]
+Fourth Bride: [font_size=32]Then we kill him, yes? We take up our own weapons and armor and we kill some hard that our people we not be able to [i]conceive[/i] how dead he is.[/font_size]
+Second Bride: No. That would perhaps have been possible in the past, were we all working in concert, but not now. Not when he has enshrined himself in fear and violence. He makes himself into a storm. He makes himself untouchable. Our only recourse is to flee. 
+First Bride: That is no recourse. He would set our people upon us and hunt us to the furthest star if he needed to. 
+Fifth Bride: Listen close, sisters. [i]I[/i] have a plan. 
+Third Bride: This should be good. 
+First Bride: Hush. Our sister is wise in the ways of magic and many other things besides. We should hear her out. 
+Fifth Bride: To survive, there is only one thing we can do. We must convince him to spare our lives. You see, I have a proposal for him. 
+Fifth Bride: Instead of slaying us, he shall instead seal each of us away in a prison of his own design. In sealing his seven brides away, he shall seal himself away as well. This is the way of things.
+Second Bride: You've gone rusted, haven't you!? There's a dent in your head, isn't there? Your gears mut be crooked; why would he [i]ever[/i] agree to that?
+Fifth Bride: The answer is simple. In sealing himself away, he creates a lock that seperates him from all worlds. 
+Fifth Bride:The presence of a lock implies the presence of a door that keeps shut, implies a key that may open it. Magic, you see, is a thing of symbols and implication. Something implied or symbolized is something that can be made reaL.
+Fifth Bride: He creates a lock, a set of chains, a closed door that shuts him off from all worlds. And the thing about dors is that [i]they open both ways[/i]. A door that cuts of all worlds is a door that may open to [i]any[/i] world. All he needs is someone to make a key, to use symbols of the seven sealed brides to open the way. 
+Seventh Bride: Surely, you jest. Surely, this is a corroded joke at our expense. Surely, you would not aid our husband in his war against creation just to prolong our lives. Surely you would not be so [i]monstrous[/i]!
+Fifth Bride: Monstrous? Perhaps. But also necessary. His paranoia was not entirely unfounded— we are, perhaps, one of the only things in the world that may one day kill him. To preserve all things, we must first preserve ourselves. 
+As the rest of her sisters murmured their agreement, the scrap metal bride could only blink back angry, oily tears. 
+Seventh Bride: Do what you will. Just know that [i]I[/i] can see through your lies, sister, even if you cannot. 
+The [color=red]king[/color] sent each of his brides to a prison of his own design. 
+The gold bride was trapped in a bird cage and brought to one of the king's greatest allies, as a gift. 
+The silver bride was cast into a shattered ocean. 
+The bronze bride was sold to the denizens of the deepest hell. 
+The iron bride was entombed in the heart of a hateful star, which fed on her pain to only grow brighter. 
+The steel bride was sent to [color=darkgreen][b]a place that had no name[/b][/color]
+The scrap metal bride, who had never been loyyal to the king, was imprisoned in the king's palace, where he could keep an eye on her personally. 
+Finally, the brass bride was brought to a hidden junkyard where knowledge held no meaning, made hollow by the wind. The king knew that his wife was clever, knew that her finely tuned mind could unravel any trap he placed her in, rebuild any piece of her he broke.
+So it was her mind that he chose to break; he reached into her head and ground her clockwork thoughts into a fine power. 
+With this final act of cruelty, the princess was brought low, and dispersed, as a mist, into the dark.
+=> END 
+
+
+~ interview_6
+You: We need to talk, A'nuht. Everything that's been happening with you, it doesn't add up. 
+SCP-6462-C-1: Oh? In what way?
+You: Don't play dumb with me— you're not the first contained deity I've dealt with. I know how you're meant to act and it isn't like this. 
+You: You have [i]never[/i] tried to convince me to let you out; no threats, no promises of— of [i]god-wishes[/i], not even a simple [i]request[/i] of freedom. 
+SCP-6462-C-1: You [speed=0.2]...[speed=1] would prefer that I threaten you? 
+You: I would [i]prefer[/i] that you stop acting suspicious as hell. 
+SCP-6462-C-1: I'm rather surprised that your fellow scholars would allow you to speak to your interview subject in such a manner. 
+You: I'm in charge of this project; how I speak is my own perogative. 
+You: The thing is, you've made this so, so easy. Information given with barely any resistance— and don't think I haven't notiecd how your little stories are clearly about yourself. 
+You: There's only one reason you'd have for any of this; you're planning something.
+SCP-6462-C-1: Was that a question? 
+You: No. I don't ask questions I already know the answer to. 
+[color=gray][i]SCP-6462-C-1 laughs.[/i][/color]
+SCP-6462-C-1: You have been most entertaining, scholar. I thank you. As a token of my appreciation, I propose a game of sorts.
+SCP-6462-C-1: I shall tell you one final tale; if you can divine the true meaning buried in the prose, I shall make my intentions bare to you. Deception will no longer lie between us. 
+You: And if I fail? 
+SCP-6462-C-1: No more interviews; not with you, not with anyone. I shall lie here, in silence, untill the end of time and beyond.
+You: How can I trust you to tell the truth if I win this "game?"
+SCP-6462-C-1: You [i]know[/i] what sort of creature I am.
+You: [speed=0.2]...[speed=1] Alright. Fine. Tell me your story. 
+=>< story_3
+You: Hmm.
+SCP-6462-C-1: Well? Do you have an answer for me, scholar?
+You: Give me a moment, I'm thinking. [font_size=16]Stories. Stories. Why did she chose [i]stories[/i] specifically? 
+SCP-6462-C-1: I think narratives are quite interesting, don't you? They're the only tool I have left. 
+SCP-6462-C-1: In a way, they are much like magic. They follow the laws of emotion and symbol, do what [i]feels[/i] right, not what [i]is[/i] right.
+SCP-64642-C-1: And like a spell, a story can take so many shapes. A comedy, a tragedy [speed=0.4]...[speed=1]A romance. A mystery. A misdirection. 
+SCP-6462-C-1: A story can be nearly anything. It [i]could[/i] be, say, a tantalizing thread of questions spoken into the spectrum of radiation, buried so deep in the firmanent that one's [color=red]father[/color] would never see it [speed=0.2]...[speed=1] but someone truly dedicated to scouring the world of its secrets could. 
+SCP-6462-C-1: A story could take the shape of a winding chain. Or a key, in three parts. Or an open door. 
+You: [i]Oh.[/i] Oh, [i]fuck[/i]. 
+SCP-6462-C-1: To tell a story is akin to speaking an incantation. With the right words, you can bring someone to a different [i]world[/i]. Or take someone out of it.
+You (Radio): Command, I need you to detonate the warhead [i]NOW[/i].
+SCP-6462-C-1: And if one's audience is listening intently? Reading and analysing every word, every turn of phrase? There's no end to what you could do. 
+You (Radio): Yes, [b][i]NOW![/i][/b] This is a code nightmare regent [color=red]red[/color]— 6462 is about to breach containment!
+SCP-6462-C-1: About to? Oh, you're sorely mistaken my dearest scholar. 
+SCP-6462-C-1: [b]We left nearly a minute ago.[/b]
+do SceneSwitcher.switch_scene("res://Levels/PalaceRooms/AssortedRooms/final_room.tscn")
+# Change scene to library scene here
+=> END
+
+
+~ story_3
+Once, there was a haze of disconnected thoughts that floated in an unceasing abyss. 
+The haze was not a girl or a princess, or a person; It was not made of glass or brass or flesh. It was a vapid, drifting thing. 
+It could not understand what a person was, could not comprehend what it was to be an "I" or a "you." It understood nothing, felt everything. The haze had neither past nor future, forever suspended in an agonizing now. 
+Adrift in the sweltering void, it shuddered with fevered nightmares. It wept. It watched with idle, vacant eyes as its fault lines groaned and ground against one another, spreading spiderwebs of stress fractures. 
+The thing was a tectonic shift. A ceasless churn. A flooded temple. 
+Kingdoms rose and fell. Oceans overflowed, then exansguuinated in the dirt. Stars were born in exultations of light, matured, and auto-cannibalized. And still, it slept on. 
+The world flowed and cracked, the yolk dripping through the ruins of its mind, past the teeth of its heart. The sky was engulfed in hungry flame. The gardens suffocated and the rivers bloomed with tumors. It was all ending, everything was ending, always ending. An unceasing chain of doomsday. The prophesies were all true. 
+And its sister said, "there is no such thing as an ending."
+And its father said "don't cry, sweet thing. Don't cry. I'll give you a reason to [b]fucking[/b] cry."
+And its mother said, "I'm sorry."
+And its mother said, "just hold on. Hold on."
+And its mother said, "come home."
+And a dream came. And the dream was made of vellum. And in the dream it saw the girl and the garden snake, and the sunlight streaming through the leaves of the greatest ash tree. 
+"There is always a choice," said the world. 
+And the woman remembered who she was. 
+=> END
+
+
+~ interview_7 
+You: I only noticed just now. But you probably already knew that. 
+A'nuht winked. 
+A'nuht: I did. 
+A chill runs down your spine. 
+You: Oh, shit. The [i]bomb[/i]. 
+A'nuht tilts her head slightly to the left. 
+A'nuht: What bomb? Did you mean [i]this[/i] bomb? 
+A second set of arms emerge from her robes, more human than the first. Sitting in her left palm is a small sphere of glass wound in wires and bits of metal. Something indistinct floats inside a murky yellow liquid within; your clearance hadn't been high enough for you to know what. 
+A'nuht: I'm rather impressed with your people;. It would be difficult for even an individual of [i]my[/i] talents to obtain such a [i]fascinating[/i] toy. 
+You: That's Foundation property. 
+A'nuht: I have a suspicion that your 'Foundation'considers me to be much the same— it's only fitting that I hold on to it, wouldn't you say? 
+Her hand closes around it, then, like a cheap magic trick, opens to reveal empty air. 
+For a moment, there is silence between the two of you. Not far behind A'nuht you can see what appears to be a sapient colony of mice discussing Maya Angelou's prose with an energy vortex in a turtleneck sweater. 
+This was the Library, wasn't it? You'd dreamed of coming here ever since you'd first read its file; this felt more like a nightmare.
+You: We played right into your hands, didn't we? We were doomed the moment we decided to interview you, weren't we? 
+A'nuht: I shall give you a parting gift I think. A reward for your assistance. 
+You: ...
+A'nuht: Here is information that your 'Foundation' will likely find quite interesting, should you find your way back to them\: my sisters have many flaws, but it should never be said that they arae not [i]resourceful[/i]. 
+A'nuht: If I have escaped my bonds, it is likely that they have recently done the same, or will be doing so in the days to come. 
+A'nuht: Very few of them are as... corteous as I am. 
+A'nuht: Now. I must be going. I've left a [speed=0.2]...[speed=1]friend of mine waiting for long enough I think.
+You: What happens to the girl in your story? Where does she go, in the end? 
+A'nuht: She goes home.
+do Global.end_game() 
+=> END  
+
+~ interview_end
+A'nuht doesn't seem to want to talk right now. Try leaving the palace and coming back tomorrow. 
+=> END
+      
+  

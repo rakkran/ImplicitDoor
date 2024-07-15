@@ -1,0 +1,10 @@
+~ start
+What's up dude, you wanna make some choices?
+6462-C-1: [[Nah|Yeah sure, why not]]
+- First one
+	6462-C-1: Aw.
+- Second one
+	6462-C-1: hell yeah
+- Start again => start
+- End the conversation => END
+=> END

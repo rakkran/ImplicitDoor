@@ -1,0 +1,116 @@
+[gd_scene load_steps=7 format=3 uid="uid://uolw6qmsf1ax"]
+
+[ext_resource type="Theme" uid="uid://dk12a6fewevyp" path="res://UI/UI_Theme.tres" id="1_ncmgd"]
+[ext_resource type="Script" path="res://UI/Menus/opening.gd" id="2_kecs3"]
+[ext_resource type="FontFile" uid="uid://mrdr5067ejlt" path="res://Assets/Fonts/Beholden/Beholden-Bold.ttf" id="3_8re4d"]
+[ext_resource type="FontFile" uid="uid://t3ptsnt0pihg" path="res://Assets/Fonts/Beholden/Beholden-Italic.ttf" id="4_gukbi"]
+[ext_resource type="FontFile" uid="uid://c7s8q5vnpn5wo" path="res://Assets/Fonts/monogram.ttf" id="5_d2o3o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qs1pd"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.827451, 0.827451, 0.827451, 1)
+border_blend = true
+
+[node name="Opening" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ncmgd")
+script = ExtResource("2_kecs3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.172549, 0.172549, 0.172549, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_ncmgd")
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_qs1pd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/ScrollContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/bold_font = ExtResource("3_8re4d")
+theme_override_fonts/italics_font = ExtResource("4_gukbi")
+theme_override_fonts/mono_font = ExtResource("5_d2o3o")
+theme_override_font_sizes/normal_font_size = 48
+theme_override_font_sizes/bold_font_size = 48
+theme_override_font_sizes/italics_font_size = 48
+bbcode_enabled = true
+text = "[center]
+[img=200]res://Assets/Misc/scp-logo.svg[/img]
+[b]SCP-6462-C-1 INTERVIEW PROPOSAL NOTES[/b]
+[b]AUTHOR:[/b] O5-11
+[b]ATTENDING:[/b] O5 Council 
+[i]UNAUTHORISED READERS WILL BE SUBJECT TO DISCIPLINARY ACTION[/i][/center]
+
+[b]PROPOSAL SUMMARY:[/b]
+Past incidence has shown that interacting with Brides of the Scarlet King or their children has, or will, overwhelmingly lead to disaster. Just one of their children is likely to destroy the world in a few years. In other words, this is no run-of-the-mill apocalypse god. This is a being that creates harbringers of doomsday in droves; the amount of death this thing has caused is truly unfathomable. 
+
+Be that as it may, the information that could be gained regarding the Scarlet King is invaluable. We know the threat it continues to pose to all of reality -- I'm sure you've all seen the reports on what he's done to the latest batch of universes taken by his army-- and we've yet to find any significant countermeasure. This is a unique opportunity to make a step towards ending his reign; we can't afford to be overly squeamish about our own safety. 
+
+I PROPOSE that Dr. Anvi Madras, current head of research for SCP-6462, tasked with interviewing SCP-6462-C-1 in order to gain information to ultimately be used to help contain or terminate the entity known as the Scarlet King.
+
+[center]
+[b]COUNCIL VOTE SUMMARY[/b]
+[table=3]
+[cell]
+YAY (6):
+O5-01
+O5-02
+O5-08
+O5-10
+O5-11
+O5-13
+
+[/cell]
+[cell]
+NAY (5):
+O5-03
+O5-05
+O5-06
+O5-07
+O5-12
+[/cell]
+[cell]
+ABSTAIN (2):
+O5-04
+O5-09
+[/cell]
+[/table]
+[b]STATUS: [color=green]APPROVED[/color][/b]
+
+Press E to begin. 
+[/center]"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="scroll_ended" from="MarginContainer/ScrollContainer" to="." method="_on_scroll_container_scroll_ended"]

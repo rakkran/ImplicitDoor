@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://bg2bl1de03vkq"
+path="res://.godot/imported/ThroneRoom.8.map-2fb7a4444cdcd4d46ea4b9516be2b3eb.tres"
+
+[deps]
+
+source_file="res://Models/ThroneRoom/autosave/ThroneRoom.8.map"
+dest_files=["res://.godot/imported/ThroneRoom.8.map-2fb7a4444cdcd4d46ea4b9516be2b3eb.tres"]
+
+[params]
+

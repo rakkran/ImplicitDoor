@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://dy7yxaq4yw81d"
+path="res://.godot/imported/FinalRoom.map-a12551fa2aea11025ff16291594a8a8f.tres"
+
+[deps]
+
+source_file="res://Models/AssortedPalaceRooms/FinalRoom.map"
+dest_files=["res://.godot/imported/FinalRoom.map-a12551fa2aea11025ff16291594a8a8f.tres"]
+
+[params]
+

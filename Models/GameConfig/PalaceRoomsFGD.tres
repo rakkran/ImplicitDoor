@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="QodotFGDFile" load_steps=8 format=3 uid="uid://brfujt3qips0h"]
+
+[ext_resource type="Resource" uid="uid://c36hv0o6g0udo" path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" id="1_46k6b"]
+[ext_resource type="Resource" uid="uid://drcua2ev6cef" path="res://Models/EntityDefinitions/PlayerSpawnPoint.tres" id="2_3ptb7"]
+[ext_resource type="Resource" uid="uid://b1agvgo52vhf8" path="res://Models/EntityDefinitions/PalaceExit.tres" id="3_ohyxj"]
+[ext_resource type="Resource" uid="uid://dkfb3g10xlp5n" path="res://Models/EntityDefinitions/worldspawn_solid_class.tres" id="4_5mivi"]
+[ext_resource type="Script" path="res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_file.gd" id="4_cpyt2"]
+[ext_resource type="Resource" uid="uid://6vaa8p0h5jty" path="res://Models/EntityDefinitions/func_group_solid_class.tres" id="5_8vxoe"]
+[ext_resource type="Resource" uid="uid://bj2q6fmx6kj6h" path="res://Models/EntityDefinitions/detail_solid_class.tres" id="6_upmdf"]
+
+[resource]
+script = ExtResource("4_cpyt2")
+export_file = false
+target_folder = "D:/Program Files/TrenchBroom-Win64-v2023.1-Release/games/The Imperceptible Door"
+fgd_name = "PalaceRoomsFGDs"
+base_fgd_files = Array[Resource]([ExtResource("1_46k6b")])
+entity_definitions = Array[Resource]([ExtResource("2_3ptb7"), ExtResource("3_ohyxj"), ExtResource("4_5mivi"), ExtResource("5_8vxoe"), ExtResource("6_upmdf")])

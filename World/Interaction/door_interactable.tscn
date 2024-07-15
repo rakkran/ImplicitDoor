@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://yyq2fffq03wd"]
+
+[ext_resource type="PackedScene" uid="uid://djisi072x3ysq" path="res://World/Interaction/interactable.tscn" id="1_jh6tg"]
+[ext_resource type="Script" path="res://World/Interaction/door_interactable.gd" id="2_kodbj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ybg6y"]
+
+[node name="DoorInteractable" instance=ExtResource("1_jh6tg")]
+script = ExtResource("2_kodbj")
+prompt_text = ""
+next_scene_path = ""
+
+[node name="CollisionShape3D" parent="." index="0"]
+shape = SubResource("BoxShape3D_ybg6y")
+
+[connection signal="focused" from="." to="." method="_on_focused"]
+[connection signal="interacted" from="." to="." method="_on_interacted"]
+[connection signal="unfocused" from="." to="." method="_on_unfocused"]

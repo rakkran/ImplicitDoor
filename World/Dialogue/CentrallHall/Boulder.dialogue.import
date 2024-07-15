@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://wj782mg7cpgj"
+path="res://.godot/imported/Boulder.dialogue-8bd13f2d859d5b0d1553fe540a1a26aa.tres"
+
+[deps]
+
+source_file="res://World/Dialogue/CentrallHall/Boulder.dialogue"
+dest_files=["res://.godot/imported/Boulder.dialogue-8bd13f2d859d5b0d1553fe540a1a26aa.tres"]
+
+[params]
+
+defaults=true

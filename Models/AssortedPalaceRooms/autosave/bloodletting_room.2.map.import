@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://5u0lfo26h56v"
+path="res://.godot/imported/bloodletting_room.2.map-4122bb1a816b9403d686e3c5571728ff.tres"
+
+[deps]
+
+source_file="res://Models/AssortedPalaceRooms/autosave/bloodletting_room.2.map"
+dest_files=["res://.godot/imported/bloodletting_room.2.map-4122bb1a816b9403d686e3c5571728ff.tres"]
+
+[params]
+

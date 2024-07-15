@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://crddbe71xmhxy"]
+
+[ext_resource type="PackedScene" uid="uid://djisi072x3ysq" path="res://World/Interaction/interactable.tscn" id="1_8hafn"]
+[ext_resource type="Script" path="res://World/Interaction/book_interactable.gd" id="2_2nyv0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8ytp6"]
+
+[node name="BookInteractable" instance=ExtResource("1_8hafn")]
+script = ExtResource("2_2nyv0")
+prompt_text = "The Book of Rak"
+
+[node name="CollisionShape3D" parent="." index="0"]
+shape = SubResource("BoxShape3D_8ytp6")
+
+[connection signal="focused" from="." to="." method="_on_focused"]
+[connection signal="interacted" from="." to="." method="_on_interacted"]
+[connection signal="unfocused" from="." to="." method="_on_unfocused"]

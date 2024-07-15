@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://dvq3tjmwft3oj"
+path="res://.godot/imported/empty_chamber.2.map-4aa91255471548e2051a070312115a26.tres"
+
+[deps]
+
+source_file="res://Models/AssortedPalaceRooms/autosave/empty_chamber.2.map"
+dest_files=["res://.godot/imported/empty_chamber.2.map-4aa91255471548e2051a070312115a26.tres"]
+
+[params]
+
